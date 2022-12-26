@@ -92,17 +92,16 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 2px solid orange;
+            // border: 2px solid orange;
             width: 50%;
-            // background-image: url(../img/webdev.svg);
 
-      
-          
+
+
 
             img {
                 border-radius: 100%;
                 height: auto;
-                width: 50%;
+                width: 35%;
                 object-fit: cover;
             }
         }

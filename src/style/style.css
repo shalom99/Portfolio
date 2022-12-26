@@ -248,14 +248,13 @@ main .mainImage img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid orange;
   width: 50%;
 }
 
 #about_page .main_container .rightDiv img {
   border-radius: 100%;
   height: auto;
-  width: 50%;
+  width: 35%;
   -o-object-fit: cover;
      object-fit: cover;
 }
