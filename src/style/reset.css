@@ -1,11 +1,11 @@
 @font-face {
-  font-family: Geomanist;
-  src: url("../Geomanist.otf");
+  font-family: Beyno;
+  src: url("../BEYNO.otf");
 }
 
 body {
-  font-family: Geomanist;
-  background-color: #181818;
+  font-family: Beyno;
+  background-color: #0B0C10;
 }
 
 /* Box sizing rules */
@@ -132,7 +132,7 @@ select {
 
 /* scrollbar Handle */
 ::-webkit-scrollbar-thumb {
-  background: #181818;
+  background: #66FCF1;
   border-left: 9px solid #fefefe;
   border-right: 9px solid #fefefe;
   border-top: 20px solid #fefefe;

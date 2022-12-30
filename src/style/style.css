@@ -1,11 +1,11 @@
 @font-face {
-  font-family: Geomanist;
-  src: url("../Geomanist.otf");
+  font-family: Beyno;
+  src: url("../BEYNO.otf");
 }
 
 body {
-  font-family: Geomanist;
-  background-color: #181818;
+  font-family: Beyno;
+  background-color: #0B0C10;
 }
 
 /* Box sizing rules */
@@ -132,7 +132,7 @@ select {
 
 /* scrollbar Handle */
 ::-webkit-scrollbar-thumb {
-  background: #181818;
+  background: #66FCF1;
   border-left: 9px solid #fefefe;
   border-right: 9px solid #fefefe;
   border-top: 20px solid #fefefe;
@@ -165,11 +165,16 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
+  color: #66FCF1;
 }
 
 nav .logo {
   width: 70px;
   height: 70px;
+}
+
+nav .logo img {
+  color: #66FCF1;
 }
 
 nav .menu {
@@ -185,6 +190,10 @@ nav .menu .navLinks a {
   padding: 0 20px;
   color: #fefefe;
   text-decoration: none;
+}
+
+nav .menu .navLinks a:hover {
+  color: #66FCF1;
 }
 
 main {
@@ -259,7 +268,22 @@ main .mainImage img {
      object-fit: cover;
 }
 
+#projects_page {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  margin-inline: 10vw;
+  border: 1px solid yellow;
+}
+
+#projects_page .project-item {
+  width: 200px;
+  height: 200px;
+  border: 2px solid blue;
+}
+
 .contact {
+  color: #66FCF1;
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -434,7 +458,7 @@ main .mainImage img {
   background-color: #fffefa;
   background-position: 400% 50%;
   background-size: 140%;
-  border-color: #fffefa;
+  border-radius: 12px;
   border-style: solid;
   border-width: 2px;
   color: #0f1922;
@@ -445,6 +469,10 @@ main .mainImage img {
   line-height: 24px;
   padding: 8px 20px;
   text-align: center;
+}
+
+.contact .contact_container .contactForm form #submitContact:hover {
+  background-color: #66FCF1;
 }
 
 footer {
@@ -459,6 +487,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 50px;
+  color: #fefefe;
 }
 
 footer .footer_logo {
@@ -494,8 +523,8 @@ footer .footer_links {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid #45A29E;
+  border-bottom: 1px solid #45A29E;
 }
 
 footer .footer_links a {
@@ -518,8 +547,13 @@ footer .footer_icons {
   gap: 30px;
 }
 
+footer .footer_icons a {
+  color: #fefefe;
+}
+
 footer .footer_copyright {
   font-size: 12px;
   line-height: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

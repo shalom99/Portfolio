@@ -1,13 +1,19 @@
-$dark: #181818;
+// $dark: #181818;
 $white: #fefefe;
 
+$dark: #0B0C10;
+$dark-gray: #1F2833;
+$light-gray: #C5C6C7;
+$cyan: #66FCF1;
+$dark_cyan: #45A29E;
+
 @font-face {
-    font-family: Geomanist;
-    src: url("../Geomanist.otf");
+    font-family: Beyno;
+    src: url("../BEYNO.otf");
   }
 
   body{
-    font-family: Geomanist;
+    font-family: Beyno;
     background-color: $dark;
 }  
   
@@ -145,16 +151,16 @@ select {
   
   /* scrollbar Track */
   ::-webkit-scrollbar-track {
-    background: #fefefe;
+    background: $white;
   }
   
   /* scrollbar Handle */
   ::-webkit-scrollbar-thumb {
-    background: #181818;
-    border-left: 9px solid #fefefe;
-    border-right: 9px solid #fefefe;
-    border-top: 20px solid #fefefe;
-    border-bottom: 20px solid #fefefe;
+    background: $cyan;
+    border-left: 9px solid $white;
+    border-right: 9px solid $white;
+    border-top: 20px solid $white;
+    border-bottom: 20px solid $white;
   
   }
   
