@@ -13,7 +13,7 @@ $dark_cyan: #45A29E;
   }
 
   body{
-    font-family: Beyno;
+    font-family: 'Poppins', sans-serif;
     background-color: $dark;
 }  
   
@@ -156,7 +156,7 @@ select {
   
   /* scrollbar Handle */
   ::-webkit-scrollbar-thumb {
-    background: $cyan;
+    background: $dark-cyan;
     border-left: 9px solid $white;
     border-right: 9px solid $white;
     border-top: 20px solid $white;

@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: Beyno;
+  font-family: 'Poppins', sans-serif;
   background-color: #0B0C10;
 }
 
@@ -132,7 +132,7 @@ select {
 
 /* scrollbar Handle */
 ::-webkit-scrollbar-thumb {
-  background: #66FCF1;
+  background: #45A29E;
   border-left: 9px solid #fefefe;
   border-right: 9px solid #fefefe;
   border-top: 20px solid #fefefe;
