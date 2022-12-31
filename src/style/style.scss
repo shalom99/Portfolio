@@ -12,25 +12,39 @@ header {
     nav {
         border: 2px solid yellow;
         display: flex;
-        width: 100%;
+        padding-inline: max(5rem, 2rem);
+        padding-top: 2rem;
         justify-content: space-between;
-        padding: 40px 50px 0 50px;
-        align-items: center;
+        width: min(100% - 2rem, 100vw);
         position: fixed;
         top: 0;
+        left: 50%;
+        transform: translate(-50%,0);
 
 
 
         .logo {
-            // border: 2px solid red;
+            border: 2px solid red;
             width: 70px;
             height: 70px;
+            display: grid;
+            align-content: center;
+       
 
 
             img {
-                //    object-fit: contain;
-                color: $cyan;
+                background-image: url(../img/SCLOGO2.png);
+                height: auto;
+                width: 100%;
+                transition: filter ease-in 300ms;
             }
+
+            img:hover {
+                filter: invert(65%) sepia(10%) saturate(2008%) hue-rotate(129deg) brightness(85%) contrast(85%);
+                transform: scale(1.2);
+            }
+
+         
         }
 
         .menu {
@@ -64,8 +78,8 @@ header {
 
 main {
     margin-top: 12vh;
-
-    margin-inline: 20vw;
+    width: min(100% - 2rem, 70rem);
+    margin-inline: auto;
     height: 88vh;
     border: 2px solid red;
     display: flex;
@@ -105,7 +119,7 @@ main {
     justify-content: center;
     border: 2px solid orange;
     margin-inline: 20vw;
-    ;
+
     height: 100vh;
 
     .main_container {
@@ -154,8 +168,17 @@ main {
                 border-radius: 100%;
             }
 
-            .overlay:hover {
-                background: rgba(69, 162, 158, 0.0);
+        
+            .overlay:hover  {
+                
+                background: rgba(69, 162, 158, 0);
+        
+            }
+
+            .overlay:hover + .borderOverlay {
+              
+                transform: scale(1.15);
+
             }
 
             .overlay {
@@ -166,16 +189,19 @@ main {
                 width: 300px;
                 height: 300px;
                 position: absolute;
+             
+       
             }
 
             .borderOverlay {
                 border: 2px solid $dark-cyan;
-              
+                transition: transform ease-in-out 1000ms;
                 border-radius: 100%;
               
                 width: 300px;
                 height: 300px;
                 position: absolute;
+              
             }
         }
 
@@ -457,3 +483,17 @@ footer {
 
     }
 }
+
+@media only screen and (max-width: 1199px) {
+    .border-top, .border-left, .border-bottom {
+      display: none;
+      }
+
+      header{
+        nav{
+            padding: 0;
+        }
+      }
+      
+ 
+  }

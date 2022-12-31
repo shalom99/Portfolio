@@ -2,9 +2,8 @@
   font-family: Beyno;
   src: url("../BEYNO.otf");
 }
-
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #0B0C10;
 }
 
@@ -12,8 +11,7 @@ body {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove default padding */
@@ -56,7 +54,8 @@ ol[class] {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -85,12 +84,10 @@ select {
             animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
             animation-iteration-count: 1 !important;
-    -webkit-transition-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
-
 .border-top {
   position: fixed;
   background-color: #fefefe;
@@ -142,5 +139,4 @@ select {
 /* scrollbar Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #b3a577;
-}
-/*# sourceMappingURL=reset.css.map */
+}/*# sourceMappingURL=reset.css.map */
