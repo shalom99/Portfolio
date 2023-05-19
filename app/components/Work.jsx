@@ -25,8 +25,8 @@ const Work = () => {
                 <li className='border border-primary rounded-md p-2'>JavaScript </li>
             </ul>
             <div className='flex md:justify-end gap-2'>
-                <Link href="/"><BsGithub size={35} className='bg-white text-black rounded-md p-1 hover:bg-primary hover:scale-110 duration-500'/> </Link>
-                <Link href="/"> <ImArrowUpRight size={35} className='bg-white text-black p-2 rounded-md hover:bg-primary hover:scale-110 duration-500'/> </Link>
+                <Link href="/"><BsGithub size={35} className='bg-primary text-white rounded-md p-1 hover:bg-white hover:text-primary hover:scale-110 duration-500'/> </Link>
+                <Link href="/"> <ImArrowUpRight size={35} className='bg-primary text-white p-2 rounded-md hover:bg-white hover:text-primary hover:scale-110 duration-500'/> </Link>
             </div>
           </div>
 
@@ -48,8 +48,8 @@ const Work = () => {
                 <li className='border border-primary rounded-md p-2'>JavaScript </li>
             </ul>
             <div className='flex gap-2'>
-                <Link href="/"><BsGithub size={35} className='bg-white text-black rounded-md p-1 hover:bg-primary hover:scale-110 duration-500'/> </Link>
-                <Link href="/"> <ImArrowUpRight size={35} className='bg-white text-black p-2 rounded-md hover:bg-primary hover:scale-110 duration-500'/> </Link>
+                <Link href="/"><BsGithub size={35} className='bg-primary text-white rounded-md p-1 hover:bg-white hover:text-primary hover:scale-110 duration-500'/> </Link>
+                <Link href="/"> <ImArrowUpRight size={35} className='bg-primary text-white p-2 rounded-md hover:bg-white hover:text-primary hover:scale-110 duration-500'/> </Link>
             </div>
           </div>
 
@@ -70,9 +70,9 @@ const Work = () => {
                 <li className='border border-primary rounded-md p-2'>Tailwind </li>
                 <li className='border border-primary rounded-md p-2'>JavaScript </li>
             </ul>
-            <div className='flex md:justify-end  gap-2'>
-                <Link href="/"><BsGithub size={35} className='bg-white text-black rounded-md p-1 hover:bg-primary hover:scale-110 duration-500'/> </Link>
-                <Link href="/"> <ImArrowUpRight size={35} className='bg-white text-black p-2 rounded-md hover:bg-primary hover:scale-110 duration-500'/> </Link>
+            <div className='flex md:justify-end gap-2'>
+                <Link href="/"><BsGithub size={35} className='bg-primary text-white rounded-md p-1 hover:bg-white hover:text-primary hover:scale-110 duration-500'/> </Link>
+                <Link href="/"> <ImArrowUpRight size={35} className='bg-primary text-white p-2 rounded-md hover:bg-white hover:text-primary hover:scale-110 duration-500'/> </Link>
             </div>
           </div>
 

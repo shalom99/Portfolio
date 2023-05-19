@@ -8,7 +8,7 @@ const Footer = () => {
     <div className=''>
         <div className=' pb-5  '><Image src="/sclogosmall.png" alt="" className='mx-auto' width={50} height={50} /></div>
         <div className='flex justify-center border-b-[1px] border-t-[1px] border-primary  md:w-[90%] mx-auto'>
-          <nav className='flex gap-5 py-5'>
+          <nav className='flex text-white gap-5 py-5'>
             <Link href="/">About</Link>
             <Link href="/">Skills</Link>
             <Link href="/">Work</Link>
