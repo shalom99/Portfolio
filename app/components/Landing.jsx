@@ -1,7 +1,8 @@
-import Link from "next/link";
+
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-scroll";
 
 
 const Landing = () => {
@@ -27,7 +28,7 @@ const Landing = () => {
           full-stack web applications.
         </p>
         <div>
-          <Link href="/" smooth={true} duration={500}>
+          <Link to="work" smooth={true} duration={1500}>
             <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#45a29e] hover:border-[#45a29e] duration-500 hover:text-black ">
               View Work
               <span className="group-hover:rotate-90 duration-300">

@@ -12,8 +12,8 @@ const About = () => {
     
 
     
-    <div name='about' className='w-full  bg-[#1f2731] text-white py-10' >
-      <div className='w-[90%] md:w-[70%] lg:w-[60%] xl:w-[50%] mx-auto'>
+    <div name='about' className='w-full md:h-screen md:flex md:items-center  bg-[#1f2731] text-white py-10' >
+      <div className='w-[90%] md:w-[80%] lg:w-[60%] xl:w-[50%] mx-auto'>
       <Slide triggerOnce>
         <div className='flex items-center gap-5'>
       <h1 className='text-4xl font-semibold py-5 text-white'>About</h1>
@@ -69,7 +69,7 @@ const About = () => {
 
 
       {/* right */}
-      <div className='w-[90%] md:w-[40%] grid grid-rows-1 grid-cols-1  '>
+      <div className='w-[90%] md:w-[50%] lg:w-[40%] grid grid-rows-1 grid-cols-1  '>
         <div className='row-span-full rounded-full col-start-1 col-end-2 w-full h-full bg-profile bg-cover aspect-square'></div>
          <div className='row-span-full col-start-1 col-end-2 rounded-full w-full h-full aspect-square opacity-50 hover:bg-transparent bg-primary z-10 duration-1000 border-2 border-primarylight hover:scale-110'></div>
 
