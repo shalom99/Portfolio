@@ -1,0 +1,3026 @@
+[33mcommit 559f65af5b279154a99c2cc363c80a586751391d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: shalom99 <castroshalom77@gmail.com>
+Date:   Fri May 19 18:05:02 2023 +0800
+
+    add existing project file to github
+
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8f322f0[m
+[1m--- /dev/null[m
+[1m+++ b/.gitignore[m
+[36m@@ -0,0 +1,35 @@[m
+[32m+[m[32m# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.[m
+[32m+[m
+[32m+[m[32m# dependencies[m
+[32m+[m[32m/node_modules[m
+[32m+[m[32m/.pnp[m
+[32m+[m[32m.pnp.js[m
+[32m+[m
+[32m+[m[32m# testing[m
+[32m+[m[32m/coverage[m
+[32m+[m
+[32m+[m[32m# next.js[m
+[32m+[m[32m/.next/[m
+[32m+[m[32m/out/[m
+[32m+[m
+[32m+[m[32m# production[m
+[32m+[m[32m/build[m
+[32m+[m
+[32m+[m[32m# misc[m
+[32m+[m[32m.DS_Store[m
+[32m+[m[32m*.pem[m
+[32m+[m
+[32m+[m[32m# debug[m
+[32m+[m[32mnpm-debug.log*[m
+[32m+[m[32myarn-debug.log*[m
+[32m+[m[32myarn-error.log*[m
+[32m+[m
+[32m+[m[32m# local env files[m
+[32m+[m[32m.env*.local[m
+[32m+[m
+[32m+[m[32m# vercel[m
+[32m+[m[32m.vercel[m
+[32m+[m
+[32m+[m[32m# typescript[m
+[32m+[m[32m*.tsbuildinfo[m
+[32m+[m[32mnext-env.d.ts[m
+[1mdiff --git a/README.md b/README.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e5f733e[m
+[1m--- /dev/null[m
+[1m+++ b/README.md[m
+[36m@@ -0,0 +1,34 @@[m
+[32m+[m[32mThis is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).[m
+[32m+[m
+[32m+[m[32m## Getting Started[m
+[32m+[m
+[32m+[m[32mFirst, run the development server:[m
+[32m+[m
+[32m+[m[32m```bash[m
+[32m+[m[32mnpm run dev[m
+[32m+[m[32m# or[m
+[32m+[m[32myarn dev[m
+[32m+[m[32m# or[m
+[32m+[m[32mpnpm dev[m
+[32m+[m[32m```[m
+[32m+[m
+[32m+[m[32mOpen [http://localhost:3000](http://localhost:3000) with your browser to see the result.[m
+[32m+[m
+[32m+[m[32mYou can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.[m
+[32m+[m
+[32m+[m[32mThis project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.[m
+[32m+[m
+[32m+[m[32m## Learn More[m
+[32m+[m
+[32m+[m[32mTo learn more about Next.js, take a look at the following resources:[m
+[32m+[m
+[32m+[m[32m- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.[m
+[32m+[m[32m- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.[m
+[32m+[m
+[32m+[m[32mYou can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome![m
+[32m+[m
+[32m+[m[32m## Deploy on Vercel[m
+[32m+[m
+[32m+[m[32mThe easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.[m
+[32m+[m
+[32m+[m[32mCheck out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.[m
+[1mdiff --git a/app/components/About.jsx b/app/components/About.jsx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8b013e6[m
+[1m--- /dev/null[m
+[1m+++ b/app/components/About.jsx[m
+[36m@@ -0,0 +1,32 @@[m
+[32m+[m[32mimport React from 'react';[m
+[32m+[m
+[32m+[m[32mconst About = () => {[m
+[32m+[m[32m  return ([m
+[32m+[m[32m    <div name='about' className='w-full h-screen bg-[#1f2731] text-gray-300'>[m
+[32m+[m[32m      <div className='flex flex-col justify-center items-center w-full h-full'>[m
+[32m+[m[32m        <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>[m
+[32m+[m[32m          <div className='sm:text-right pb-8 pl-4'>[m
+[32m+[m[32m            <p className='text-4xl font-bold inline border-b-4 border-[#64ffda]'>[m
+[32m+[m[32m              About[m
+[32m+[m[32m            </p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div></div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>[m
+[32m+[m[32m            <div className='sm:text-right text-4xl font-bold'>[m
+[32m+[m[32m              <p>Hi. I'm Shalom, nice to meet you. Please take a look around.</p>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div>[m
+[32m+[m[32m              <p>I am passionate about building excellent software that improves[m
+[32m+[m[32m              the lives of those around me. I specialize in creating software[m
+[32m+[m[32m              for clients ranging from individuals and small-businesses all the[m
+[32m+[m[32m              way to large enterprise corporations. What would you do if you had[m
+[32m+[m[32m              a software expert available at your fingertips?</p>[m[41m  [m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  );[m
+[32m+[m[32m};[m
+[32m+[m
+[32m+[m[32mexport default About;[m
+\ No newline at end of file[m
+[1mdiff --git a/app/components/App.js b/app/components/App.js[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a588c61[m
+[1m--- /dev/null[m
+[1m+++ b/app/components/App.js[m
+[36m@@ -0,0 +1,126 @@[m
+[32m+[m[32mimport About from "./components/About";[m
+[32m+[m[32mimport Contact from "./components/Contact";[m
+[32m+[m[32mimport Home from "./components/Home";[m
+[32m+[m[32mimport Navbar from "./components/Navbar";[m
+[32m+[m[32mimport Skills from "./components/Skills";[m
+[32m+[m[32mimport Work from "./components/Work";[m
+[32m+[m
+[32m+[m[32mimport { useCallback } from "react";[m
+[32m+[m[32mimport Particles from "react-tsparticles";[m
+[32m+[m[32mimport { loadFull } from "tsparticles";[m
+[32m+[m[32mimport Footer from "./components/Footer";[m
+[32m+[m[32mimport Test from "./components/Test";[m
+[32m+[m
+[32m+[m
+[32m+[m[32mfunction App() {[m
+[32m+[m[32m  const particlesInit = useCallback(async engine => {[m
+[32m+[m[32m    console.log(engine);[m
+[32m+[m[32m    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets[m
+[32m+[m[32m    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready[m
+[32m+[m[32m    // starting from v2 you can add only the features you need reducing the bundle size[m
+[32m+[m[32m    await loadFull(engine);[m
+[32m+[m[32m}, []);[m
+[32m+[m
+[32m+[m[32mconst particlesLoaded = useCallback(async container => {[m
+[32m+[m[32m    await console.log(container);[m
+[32m+[m[32m}, []);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m  return ([m
+[32m+[m[41m    [m
+[32m+[m[32m    <div>[m
+[32m+[m[32m      <Particles className="fixed z-[-1]"[m
+[32m+[m[32m            id="tsparticles"[m
+[32m+[m[32m            init={particlesInit}[m
+[32m+[m[32m            loaded={particlesLoaded}[m
+[32m+[m[32m            options={{[m
+[32m+[m[32m                background: {[m
+[32m+[m[32m                    color: {[m
+[32m+[m[32m                        value: "#181818",[m
+[32m+[m[32m                    },[m
+[32m+[m[41m                  [m
+[32m+[m[32m                },[m
+[32m+[m[32m                fpsLimit: 120,[m
+[32m+[m[32m                interactivity: {[m
+[32m+[m[32m                    events: {[m
+[32m+[m[32m                        onClick: {[m
+[32m+[m[32m                            enable: false,[m
+[32m+[m[32m                            mode: "push",[m
+[32m+[m[32m                        },[m
+[32m+[m[32m                        onHover: {[m
+[32m+[m[32m                            enable: false,[m
+[32m+[m[32m                            mode: "repulse",[m
+[32m+[m[32m                        },[m
+[32m+[m[32m                        resize: true,[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    modes: {[m
+[32m+[m[32m                        push: {[m
+[32m+[m[32m                            quantity: 4,[m
+[32m+[m[32m                        },[m
+[32m+[m[32m                        repulse: {[m
+[32m+[m[32m                            distance: 200,[m
+[32m+[m[32m                            duration: 0.4,[m
+[32m+[m[32m                        },[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                },[m
+[32m+[m[32m                particles: {[m
+[32m+[m[32m                    color: {[m
+[32m+[m[32m                        value: "#64ffda",[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    links: {[m
+[32m+[m[32m                        color: "#64ffda",[m
+[32m+[m[32m                        distance: 150,[m
+[32m+[m[32m                        enable: true,[m
+[32m+[m[32m                        opacity: 0.5,[m
+[32m+[m[32m                        width: 1,[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    collisions: {[m
+[32m+[m[32m                        enable: true,[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    move: {[m
+[32m+[m[32m                        directions: "none",[m
+[32m+[m[32m                        enable: true,[m
+[32m+[m[32m                        outModes: {[m
+[32m+[m[32m                            default: "bounce",[m
+[32m+[m[32m                        },[m
+[32m+[m[32m                        random: false,[m
+[32m+[m[32m                        speed: 2,[m
+[32m+[m[32m                        straight: false,[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    number: {[m
+[32m+[m[32m                        density: {[m
+[32m+[m[32m                            enable: true,[m
+[32m+[m[32m                            area: 800,[m
+[32m+[m[32m                        },[m
+[32m+[m[32m                        value: 20,[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    opacity: {[m
+[32m+[m[32m                        value: 0.5,[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    shape: {[m
+[32m+[m[32m                        type: "circle",[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    size: {[m
+[32m+[m[32m                        value: { min: 1, max: 5 },[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                },[m
+[32m+[m[32m                detectRetina: true,[m
+[32m+[m[41m                [m
+[32m+[m[41m  [m
+[32m+[m[41m                [m
+[32m+[m[32m            }}[m
+[32m+[m[32m        />[m
+[32m+[m[41m       [m
+[32m+[m[32m      <Navbar />[m
+[32m+[m[32m      <Home />[m
+[32m+[m[32m      <About />[m
+[32m+[m[32m      <Skills />[m
+[32m+[m[32m      <Work />[m
+[32m+[m[32m      <Contact />[m
+[32m+[m[32m      <Footer />[m
+[32m+[m[41m      [m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  );[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mexport default App;[m
+[1mdiff --git a/app/components/Contact.jsx b/app/components/Contact.jsx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..20f07d5[m
+[1m--- /dev/null[m
+[1m+++ b/app/components/Contact.jsx[m
+[36m@@ -0,0 +1,69 @@[m
+[32m+[m[32mimport React from "react";[m
+[32m+[m[32mimport { AiOutlineMail } from "react-icons/ai";[m
+[32m+[m[32mimport { BsFillTelephoneFill } from "react-icons/bs";[m
+[32m+[m[32mimport { FaMapMarkerAlt } from "react-icons/fa";[m
+[32m+[m
+[32m+[m[32mconst Contact = () => {[m
+[32m+[m[32m  return ([m
+[32m+[m[32m    <div className="flex flex-col gap-5 md:flex-row md:w-[90%] lg:w-[60%]  md:items-center md:mx-auto py-5 md:px-0  ">[m
+[32m+[m[32m      <div className="md:w-[40%]">[m
+[32m+[m[32m        <h1 className="text-3xl md:text-4xl font-bold  text-gray-300 mb-5">[m
+[32m+[m[32m          Contact Me[m
+[32m+[m[32m        </h1>[m
+[32m+[m[32m        <p className='text-md mb-5 text-primary'>I'm available for freelance work.</p>[m
+[32m+[m[32m        <div className="flex flex-col gap-5">[m
+[32m+[m[32m          <div className="flex items-center gap-7">[m
+[32m+[m[32m            <BsFillTelephoneFill size={55} className="border-2 rounded-full p-4 text-primary" />[m
+[32m+[m[32m            <p className="text-slate-300">(+63)909 1644 811</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div className="flex items-center gap-7">[m
+[32m+[m[32m          <AiOutlineMail size={55} className="border-2 rounded-full p-4 text-primary" />[m
+[32m+[m[32m            <p className="text-slate-300">castroshalom77@gmail.com</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div className="flex items-center gap-7">[m
+[32m+[m[32m            <FaMapMarkerAlt size={55} className="border-2 rounded-full p-4 text-primary" />[m
+[32m+[m[32m            <p className="text-slate-300"> Baguio City, Philippines 2600</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m
+[32m+[m[32m      <div[m
+[32m+[m[32m        name="contact"[m
+[32m+[m[32m        className="md:w-[60%] flex justify-center"[m
+[32m+[m[32m      >[m
+[32m+[m[32m        <form[m
+[32m+[m[32m          method="POST"[m
+[32m+[m[32m          action="https://getform.io/f/0c772458-cb37-4173-8302-86a36b4c69fe"[m
+[32m+[m[32m          className="flex flex-col max-w-[700px] w-full"[m
+[32m+[m[32m        >[m
+[32m+[m[41m          [m
+[32m+[m[32m          <input[m
+[32m+[m[32m            className="bg-[#1f2731] p-2 text-white rounded shadow-md shadow-[#040c16]"[m
+[32m+[m[32m            type="text"[m
+[32m+[m[32m            placeholder="Name"[m
+[32m+[m[32m            name="name"[m
+[32m+[m[32m          />[m
+[32m+[m[32m          <input[m
+[32m+[m[32m            className="my-4 p-2 bg-[#1f2731] text-white rounded shadow-md shadow-[#040c16]"[m
+[32m+[m[32m            type="email"[m
+[32m+[m[32m            placeholder="Email"[m
+[32m+[m[32m            name="email"[m
+[32m+[m[32m          />[m
+[32m+[m[32m          <textarea[m
+[32m+[m[32m            className="bg-[#1f2731] p-2 text-white rounded shadow-md shadow-[#040c16] resize-none"[m
+[32m+[m[32m            name="message"[m
+[32m+[m[32m            cols="20"[m
+[32m+[m[32m            rows="10"[m
+[32m+[m[32m            placeholder="Message"[m
+[32m+[m[41m            [m
+[32m+[m[32m          ></textarea>[m
+[32m+[m[32m          <button className="text-white py-3 rounded-md bg-primary hover:bg-white hover:border-[#64ffda] hover:text-primary hover:font-bold duration-500  w-full mx-auto flex items-center justify-center mt-4">[m
+[32m+[m[32m            Let's Collaborate![m
+[32m+[m[32m          </button>[m
+[32m+[m[32m        </form>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  );[m
+[32m+[m[32m};[m
+[32m+[m
+[32m+[m[32mexport default Contact;[m
+[1mdiff --git a/app/components/Footer.jsx b/app/components/Footer.jsx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0f3f4d4[m
+[1m--- /dev/null[m
+[1m+++ b/app/components/Footer.jsx[m
+[36m@@ -0,0 +1,23 @@[m
+[32m+[m[32mimport Image from 'next/image'[m
+[32m+[m[32mimport Link from 'next/link'[m
+[32m+[m[32mimport React from 'react'[m
+[32m+[m
+[32m+[m
+[32m+[m[32mconst Footer = () => {[m
+[32m+[m[32m  return ([m
+[32m+[m[32m    <div className=''>[m
+[32m+[m[32m        <div className=' pb-5  '><Image src="/sclogosmall.png" alt="" className='mx-auto' width={50} height={50} /></div>[m
+[32m+[m[32m        <div className='flex justify-center border-b-[1px] border-t-[1px] border-primary  md:w-[90%] mx-auto'>[m
+[32m+[m[32m          <nav className='flex gap-5 py-5'>[m
+[32m+[m[32m            <Link href="/">About</Link>[m
+[32m+[m[32m            <Link href="/">Skills</Link>[m
+[32m+[m[32m            <Link href="/">Work</Link>[m
+[32m+[m[32m            <Link href="/">Contact</Link>[m
+[32m+[m[32m          </nav>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <p className='text-slate-400 w-[90%] text-center mx-auto pt-5 pb-2'>Copyright &copy; 2023 Shalom Castro All Rights Reserved.</p>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  )[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mexport default Footer[m
+\ No newline at end of file[m
+[1mdiff --git a/app/components/Header.jsx b/app/components/Header.jsx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..87877fe[m
+[1m--- /dev/null[m
+[1m+++ b/app/components/Header.jsx[m
+[36m@@ -0,0 +1,88 @@[m
+[32m+[m[32m'use client'[m
+[32m+[m[32mimport Image from 'next/image'[m
+[32m+[m[32mimport Link from 'next/link'[m
+[32m+[m[32mimport React, { useState } from 'react'[m
+[32m+[m[32mimport {FaBars, FaTimes, FaLinkedin, FaGithub} from 'react-icons/fa'[m
+[32m+[m[32mimport { HiOutlineMail} from 'react-icons/hi'[m
+[32m+[m[32mimport { BsFillPersonLinesFill } from "react-icons/bs";[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32mexport default function Header() {[m
+[32m+[m
+[32m+[m[32m    const [nav,setNav] = useState(false)[m
+[32m+[m[32m    const handleClick = () => setNav(!nav)[m
+[32m+[m[41m  [m
+[32m+[m[32m  return ([m
+[32m+[m[41m    [m
+[32m+[m[32m    <div className="fixed w-full h-[80px] flex justify-between items-center px-4  text-gray-300">[m
+[32m+[m[32m      <div>[m
+[32m+[m[32m        <Image src="/sclogosmall.png"  width={50} height={50} alt="SC LOGO"/>[m
+[32m+[m[32m      </div>[m
+[32m+[m
+[32m+[m[32m      {/* menu */}[m
+[32m+[m[41m    [m
+[32m+[m[32m        <ul className="hidden md:flex">[m
+[32m+[m[41m       [m
+[32m+[m[32m          <li className="hover:text-[#64ffda]"> <Link href="/" smooth={true}  duration={500} >[m
+[32m+[m[32m          About[m
+[32m+[m[32m        </Link></li>[m
+[32m+[m[32m          <li className="hover:text-[#64ffda]"> <Link href="/"smooth={true}  duration={500} >[m
+[32m+[m[32m          Skills[m
+[32m+[m[32m        </Link></li>[m
+[32m+[m[32m          <li className="hover:text-[#64ffda]"> <Link href="/" smooth={true}  duration={500} >[m
+[32m+[m[32m          Work[m
+[32m+[m[32m        </Link></li>[m
+[32m+[m[32m          <li className="hover:text-[#64ffda]"> <Link href="/"smooth={true}  duration={500} >[m
+[32m+[m[32m          Contact[m
+[32m+[m[32m        </Link></li>[m
+[32m+[m[32m        </ul>[m
+[32m+[m[41m     [m
+[32m+[m[32m      {/* Hamburger */}[m
+[32m+[m[32m      <div onClick={handleClick} className="md:hidden z-10">[m
+[32m+[m[32m        {!nav ? <FaBars size={30} /> : <FaTimes size={30} />}[m
+[32m+[m[41m        [m
+[32m+[m[32m      </div>[m
+[32m+[m
+[32m+[m[32m      {/* Mobile Menu */}[m
+[32m+[m[32m      <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#1f2731] flex flex-col justify-center items-center z-100'}>[m
+[32m+[m
+[32m+[m[32m        <li className="py-6 text-4xl"> <Link onClick={handleClick} href="/" smooth={true}  duration={500} >[m
+[32m+[m[32m          Home[m
+[32m+[m[32m        </Link></li>[m
+[32m+[m[32m        <li className="py-6 text-4xl"> <Link onClick={handleClick} href="/" smooth={true}  duration={500} >[m
+[32m+[m[32m          About[m
+[32m+[m[32m        </Link></li>[m
+[32m+[m[32m        <li className="py-6 text-4xl"> <Link onClick={handleClick} href="/" smooth={true}  duration={500} >[m
+[32m+[m[32m          Skills[m
+[32m+[m[32m        </Link></li>[m
+[32m+[m[32m        <li className="py-6 text-4xl"> <Link onClick={handleClick} href="/" smooth={true}  duration={500} >[m
+[32m+[m[32m          Work[m
+[32m+[m[32m        </Link></li>[m
+[32m+[m[32m        <li className="py-6 text-4xl"> <Link onClick={handleClick} href="/" smooth={true}  duration={500} >[m
+[32m+[m[32m          Contact[m
+[32m+[m[32m        </Link></li>[m
+[32m+[m[32m      </ul>[m
+[32m+[m
+[32m+[m[32m      {/* Social icons */}[m
+[32m+[m[32m      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>[m
+[32m+[m[32m        <ul>[m
+[32m+[m[32m            <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">[m
+[32m+[m[32m                <a className="flex justify-between items-center w-full text-gray-300" href="https://www.linkedin.com/in/shalom-castro-8a9144161" target="_blank" rel="noreferrer">LinkedIn  <FaLinkedin size={30}/> </a>[m
+[32m+[m[32m            </li>[m
+[32m+[m[32m            <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">[m
+[32m+[m[32m                <a className="flex justify-between items-center w-full text-gray-300" href="https://github.com/shalom99?tab=repositories" target="_blank" rel="noreferrer">Github  <FaGithub size={30}/> </a>[m
+[32m+[m[32m            </li>[m
+[32m+[m[32m            <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#45a29e]">[m
+[32m+[m[32m                <a className="flex justify-between items-center w-full text-gray-300" href="mailto:castroshalom77@gmail.com">Email  <HiOutlineMail size={30}/> </a>[m
+[32m+[m[32m            </li>[m
+[32m+[m[32m            <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">[m
+[32m+[m[32m                <a className="flex justify-between items-center w-full text-gray-300" href="/">Resume  <BsFillPersonLinesFill size={30}/> </a>[m
+[32m+[m[32m            </li>[m
+[32m+[m[32m        </ul>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m
+[32m+[m[32m  )[m
+[32m+[m[32m}[m
+[1mdiff --git a/app/components/Landing.jsx b/app/components/Landing.jsx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e71b771[m
+[1m--- /dev/null[m
+[1m+++ b/app/components/Landing.jsx[m
+[36m@@ -0,0 +1,36 @@[m
+[32m+[m[32mimport Link from "next/link";[m
+[32m+[m[32mimport React from "react";[m
+[32m+[m[32mimport { HiArrowNarrowRight } from "react-icons/hi";[m
+[32m+[m
+[32m+[m
+[32m+[m[32mconst Landing = () => {[m
+[32m+[m[32m  return ([m
+[32m+[m[32m    <div name="home" className="w-full h-screen">[m
+[32m+[m[32m      {/* Container */}[m
+[32m+[m[32m      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">[m
+[32m+[m[32m        <p className="text-gray-100">Hi, my name is</p>[m
+[32m+[m[32m        <h1 className="text-4xl sm:text-7xl font-bold text-[#45a29e]">[m
+[32m+[m[32m        Shalom C. Castro[m
+[32m+[m[32m        </h1>[m
+[32m+[m[32m        <h2 className="z-[-1] text-1xl sm:text-7xl font-bold text-white">  </h2>[m
+[32m+[m[32m        <p className="text-[#8892b0] py-4 max-w-[700px]">[m
+[32m+[m[32m          I’m a <span className="text-[#45a29e]">full-stack developer</span> specializing in building (and occasionally[m
+[32m+[m[32m          designing) exceptional digital experiences. Currently, I’m focused on[m
+[32m+[m[32m          building responsive full-stack web applications.[m
+[32m+[m[32m        </p>[m
+[32m+[m[32m        <div>[m
+[32m+[m[32m        <Link href="/" smooth={true}  duration={500} >[m
+[32m+[m[32m        <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#45a29e] hover:border-[#45a29e] duration-500 hover:text-black ">View Work[m[41m [m
+[32m+[m[32m            <span className="group-hover:rotate-90 duration-300">[m
+[32m+[m[32m            <HiArrowNarrowRight className="ml-3" />[m
+[32m+[m[32m            </span>[m
+[32m+[m[32m            </button>[m
+[32m+[m[32m        </Link>[m
+[32m+[m[41m   [m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  );[m
+[32m+[m[32m};[m
+[32m+[m
+[32m+[m[32mexport default Landing;[m
+[1mdiff --git a/app/components/Skills.jsx b/app/components/Skills.jsx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f7f4475[m
+[1m--- /dev/null[m
+[1m+++ b/app/components/Skills.jsx[m
+[36m@@ -0,0 +1,63 @@[m
+[32m+[m[32mimport React from "react";[m
+[32m+[m
+[32m+[m[32mimport Image from "next/image";[m
+[32m+[m
+[32m+[m[32mconst Skills = () => {[m
+[32m+[m[32m  return ([m
+[32m+[m[32m    <div name="skills" className="w-full h-screen text-gray-300">[m
+[32m+[m[32m      {/* Container */}[m
+[32m+[m[32m      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">[m
+[32m+[m[32m        <div>[m
+[32m+[m[32m          <p className="text-4xl font-bold inline border-b-4 border-[#64ffda] ">[m
+[32m+[m[32m            Skills[m
+[32m+[m[32m          </p>[m
+[32m+[m[32m          <p className="py-4">Technologies I am currently using:</p>[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m[32m        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">[m
+[32m+[m[32m          <div className="shadow-md flex flex-col items-center rounded-lg shadow-[#040c16] hover:bg-[#1f2731] hover:font-bold hover:scale-110 duration-500">[m
+[32m+[m[32m            <Image width={50} height={50} src="/html.png" alt="HTML icon" />[m
+[32m+[m[32m            <p className="my-4">HTML</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div className="shadow-md flex flex-col items-center rounded-lg shadow-[#040c16] hover:bg-[#1f2731] hover:font-bold hover:scale-110 duration-500">[m
+[32m+[m[32m            <Image width={50} height={50} src="/css.png" alt="HTML icon" />[m
+[32m+[m[32m            <p className="my-4">CSS</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m
+[32m+[m[32m          <div className="shadow-md flex flex-col items-center rounded-lg shadow-[#040c16] hover:bg-[#1f2731] hover:font-bold hover:scale-110 duration-500">[m
+[32m+[m[32m            <Image[m
+[32m+[m[32m              width={50}[m
+[32m+[m[32m              height={50}[m
+[32m+[m[32m              src="/javascript.png"[m
+[32m+[m[32m              alt="HTML icon"[m
+[32m+[m[32m            />[m
+[32m+[m[32m            <p className="my-4">JAVASCRIPT</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div className="shadow-md flex flex-col items-center rounded-lg shadow-[#040c16] hover:bg-[#1f2731] hover:font-bold hover:scale-110 duration-500">[m
+[32m+[m[32m            <Image width={50} height={50} src="/react.png" alt="React icon" />[m
+[32m+[m[32m            <p className="my-4">REACT</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div className="shadow-md flex flex-col items-center rounded-lg shadow-[#040c16] hover:bg-[#1f2731] hover:font-bold hover:scale-110 duration-500">[m
+[32m+[m[32m            <Image width={50} height={50} src="/github.png" alt="HTML icon" />[m
+[32m+[m[32m            <p className="my-4">GITHUB</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div className="shadow-md flex flex-col items-center rounded-lg shadow-[#040c16] hover:bg-[#1f2731] hover:font-bold hover:scale-110 duration-500">[m
+[32m+[m[32m            <Image width={50} height={50} src="/next.png" alt="HTML icon" className="bg-white rounded-full border" />[m
+[32m+[m[32m            <p className="my-4">NEXT JS</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m
+[32m+[m[32m          <div className="shadow-md flex flex-col items-center rounded-lg shadow-[#040c16] hover:bg-[#1f2731] hover:font-bold hover:scale-110 duration-500">[m
+[32m+[m[32m            <Image width={50} height={50} src="/tailwind.png" alt="HTML icon" />[m
+[32m+[m[32m            <p className="my-4">TAILWIND</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div className="shadow-md flex flex-col items-center rounded-lg shadow-[#040c16] hover:bg-[#1f2731] hover:font-bold hover:scale-110 duration-500">[m
+[32m+[m[32m            <Image width={50} height={50} src="/firebase.png" alt="HTML icon" />[m
+[32m+[m[32m            <p className="my-4">FIREBASE</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  );[m
+[32m+[m[32m};[m
+[32m+[m
+[32m+[m[32mexport default Skills;[m
+[1mdiff --git a/app/components/Work.jsx b/app/components/Work.jsx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8d9d454[m
+[1m--- /dev/null[m
+[1m+++ b/app/components/Work.jsx[m
+[36m@@ -0,0 +1,95 @@[m
+[32m+[m[32mimport Image from 'next/image';[m
+[32m+[m[32mimport Link from 'next/link';[m
+[32m+[m[32mimport React from 'react';[m
+[32m+[m[32mimport { BsGithub } from 'react-icons/bs';[m
+[32m+[m[32mimport {ImArrowUpRight } from 'react-icons/im';[m
+[32m+[m
+[32m+[m[32mconst Work = () => {[m
+[32m+[m
+[32m+[m
+[32m+[m[32m  return ([m
+[32m+[m[32m    <div name='work' className='w-full bg-[#1f2731]'>[m
+[32m+[m[32m      <div className='w-[95%] md:w-[90%] lg:w-[60%] xl:w-[50%] mx-auto py-5'>[m[41m [m
+[32m+[m[32m      <h1 className='text-4xl font-semibold py-5  '>Projects</h1>[m
+[32m+[m[32m      <div className='flex flex-col gap-5'>[m
+[32m+[m
+[32m+[m
+[32m+[m[32m      <div className='grid grid-cols-12'>[m
+[32m+[m[32m          <div className='row-span-full col-start-2 md:col-start-6 col-end-12 md:col-end-13 col-span-7 flex flex-col justify-center gap-2 py-2 z-10'>[m
+[32m+[m[32m            <h3 className='md:text-end text-sm font-semibold text-primary'>Featured Project #1</h3>[m
+[32m+[m[32m            <h2 className='text-2xl md:text-4xl font-bold md:text-end'>Pro-Lab</h2>[m
+[32m+[m[32m            <p className='md:text-lg rounded-md   md:bg-gray-400 py-2 px-1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem eum odit impedit autem quo quisquam quidem dolorum, temporibus enim similique nemo sapiente ratione nesciunt maiores vero. Sed natus nihil facere!</p>[m
+[32m+[m[32m            <ul className='flex md:justify-end gap-2 mb-5'>[m
+[32m+[m[32m                <li className='border border-primary rounded-md p-2'>NextJS </li>[m
+[32m+[m[32m                <li className='border border-primary rounded-md p-2'>Tailwind </li>[m
+[32m+[m[32m                <li className='border border-primary rounded-md p-2'>JavaScript </li>[m
+[32m+[m[32m            </ul>[m
+[32m+[m[32m            <div className='flex md:justify-end gap-2'>[m
+[32m+[m[32m                <Link href="/"><BsGithub size={35} className='bg-white text-black rounded-md p-1 hover:bg-primary hover:scale-110 duration-500'/> </Link>[m
+[32m+[m[32m                <Link href="/"> <ImArrowUpRight size={35} className='bg-white text-black p-2 rounded-md hover:bg-primary hover:scale-110 duration-500'/> </Link>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m
+[32m+[m[32m          <div className='row-span-full col-span-7 col-start-1 col-end-13 md:col-end-8 bg-project2 bg-cover md:bg-contain bg-center md:bg-left bg-no-repeat  opacity-25 md:opacity-100 md:min-h-[525px]'>[m
+[32m+[m[41m           [m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m
+[32m+[m[41m      [m
+[32m+[m[32m        <div className='grid grid-cols-12'>[m
+[32m+[m[32m          <div className='row-span-full col-start-2 md:col-start-1 col-end-13 md:col-end-8 col-span-7 flex flex-col justify-center gap-2 py-2 z-10'>[m
+[32m+[m[32m            <h3 className='text-sm font-semibold text-primary'>Featured Project #2</h3>[m
+[32m+[m[32m            <h2 className='text-2xl md:text-4xl font-bold '>Pro-Lab</h2>[m
+[32m+[m[32m            <p className='md:text-lg rounded-md  md:bg-gray-400 py-2 px-1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem eum odit impedit autem quo quisquam quidem dolorum, temporibus enim similique nemo sapiente ratione nesciunt maiores vero. Sed natus nihil facere!</p>[m
+[32m+[m[32m            <ul className='flex mb-5'>[m
+[32m+[m[32m                <li className='border border-primary rounded-md p-2'>NextJS </li>[m
+[32m+[m[32m                <li className='border border-primary rounded-md p-2'>Tailwind </li>[m
+[32m+[m[32m                <li className='border border-primary rounded-md p-2'>JavaScript </li>[m
+[32m+[m[32m            </ul>[m
+[32m+[m[32m            <div className='flex gap-2'>[m
+[32m+[m[32m                <Link href="/"><BsGithub size={35} className='bg-white text-black rounded-md p-1 hover:bg-primary hover:scale-110 duration-500'/> </Link>[m
+[32m+[m[32m                <Link href="/"> <ImArrowUpRight size={35} className='bg-white text-black p-2 rounded-md hover:bg-primary hover:scale-110 duration-500'/> </Link>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m
+[32m+[m[32m          <div className='row-span-full col-span-7 col-start-1 md:col-start-6 col-end-13 md:col-end-13 bg-project3 bg-cover md:bg-contain bg-center md:bg-right bg-no-repeat  opacity-25 md:opacity-100 md:min-h-[525px]'>[m
+[32m+[m[41m           [m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m
+[32m+[m[41m  [m
+[32m+[m[32m        <div className='grid grid-cols-12'>[m
+[32m+[m[32m          <div className='row-span-full col-start-2 md:col-start-6 col-end-12 md:col-end-13 col-span-7 flex flex-col justify-center gap-2 py-2 z-10'>[m
+[32m+[m[32m            <h3 className='md:text-end text-sm font-semibold text-primary'>Featured Project #1</h3>[m
+[32m+[m[32m            <h2 className='text-2xl md:text-4xl font-bold md:text-end'>Pro-Lab</h2>[m
+[32m+[m[32m            <p className='md:text-lg rounded-md   md:bg-gray-400 py-2 px-1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem eum odit impedit autem quo quisquam quidem dolorum, temporibus enim similique nemo sapiente ratione nesciunt maiores vero. Sed natus nihil facere!</p>[m
+[32m+[m[32m            <ul className='flex md:justify-end gap-2 mb-5'>[m
+[32m+[m[32m                <li className='border border-primary rounded-md p-2'>NextJS </li>[m
+[32m+[m[32m                <li className='border border-primary rounded-md p-2'>Tailwind </li>[m
+[32m+[m[32m                <li className='border border-primary rounded-md p-2'>JavaScript </li>[m
+[32m+[m[32m            </ul>[m
+[32m+[m[32m            <div className='flex md:justify-end gap-2'>[m
+[32m+[m[32m                <Link href="/"><BsGithub size={35} className='bg-white text-black rounded-md p-1 hover:bg-primary hover:scale-110 duration-500'/> </Link>[m
+[32m+[m[32m                <Link href="/"> <ImArrowUpRight size={35} className='bg-white text-black p-2 rounded-md hover:bg-primary hover:scale-110 duration-500'/> </Link>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m
+[32m+[m[32m          <div className='row-span-full col-span-7 col-start-1 col-end-13 md:col-end-8 bg-project1 bg-cover md:bg-contain bg-center md:bg-left bg-no-repeat  opacity-25 md:opacity-100 md:min-h-[525px]'>[m
+[32m+[m[41m           [m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m  </div>[m
+[32m+[m[32m  );[m
+[32m+[m[32m};[m
+[32m+[m
+[32m+[m[32mexport default Work;[m
+\ No newline at end of file[m
+[1mdiff --git a/app/data/data.js b/app/data/data.js[m
+[1mnew file mode 100644[m
+[1mindex 0000000..45562b6[m
+[1m--- /dev/null[m
+[1m+++ b/app/data/data.js[m
+[36m@@ -0,0 +1,35 @@[m
+[32m+[m[32mimport WorkIm from '../assets/projects/workImg.jpeg'[m
+[32m+[m[32mimport RealEst from '../assets/projects/realestate.jpg'[m
+[32m+[m
+[32m+[m[32mexport const data=[[m
+[32m+[m[32m    {[m
+[32m+[m[32m        id:1,[m
+[32m+[m[32m        name:"React JS Application",[m
+[32m+[m[32m        image:WorkIm,[m
+[32m+[m[32m        github:"",[m
+[32m+[m[32m        live:"",[m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m        id:2,[m
+[32m+[m[32m        name:"React JS Application",[m
+[32m+[m[32m        image:RealEst,[m
+[32m+[m[32m        github:"",[m
+[32m+[m[32m        live:"",[m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m        id:3,[m
+[32m+[m[32m        name:"React JS Application",[m
+[32m+[m[32m        image:WorkIm,[m
+[32m+[m[32m        github:"",[m
+[32m+[m[32m        live:"",[m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m        id:4,[m
+[32m+[m[32m        name:"React JS Application",[m
+[32m+[m[32m        image:RealEst,[m
+[32m+[m[32m        github:"",[m
+[32m+[m[32m        live:"",[m
+[32m+[m[32m    },[m
+[32m+[m
+[32m+[m
+[32m+[m[32m][m
+\ No newline at end of file[m
+[1mdiff --git a/app/favicon.ico b/app/favicon.ico[m
+[1mnew file mode 100644[m
+[1mindex 0000000..718d6fe[m
+Binary files /dev/null and b/app/favicon.ico differ
+[1mdiff --git a/app/globals.css b/app/globals.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d0b1a11[m
+[1m--- /dev/null[m
+[1m+++ b/app/globals.css[m
+[36m@@ -0,0 +1,39 @@[m
+[32m+[m[32m@tailwind base;[m
+[32m+[m[32m@tailwind components;[m
+[32m+[m[32m@tailwind utilities;[m
+[32m+[m
+[32m+[m[32m:root {[m
+[32m+[m[32m  --foreground-rgb: 0, 0, 0;[m
+[32m+[m[32m  --background-start-rgb: 214, 219, 220;[m
+[32m+[m[32m  --background-end-rgb: 255, 255, 255;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m@media (prefers-color-scheme: dark) {[m
+[32m+[m[32m  :root {[m
+[32m+[m[32m    --foreground-rgb: 255, 255, 255;[m
+[32m+[m[32m    --background-start-rgb: 0, 0, 0;[m
+[32m+[m[32m    --background-end-rgb: 0, 0, 0;[m
+[32m+[m[32m  }[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mbody {[m
+[32m+[m[32m  color: rgb(var(--foreground-rgb));[m
+[32m+[m[32m  background: linear-gradient([m
+[32m+[m[32m      to bottom,[m
+[32m+[m[32m      transparent,[m
+[32m+[m[32m      rgb(var(--background-end-rgb))[m
+[32m+[m[32m    )[m
+[32m+[m[32m    rgb(var(--background-start-rgb));[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m@layer base {[m
+[32m+[m[32m    body {[m
+[32m+[m[41m     [m
+[32m+[m[32m    }[m
+[32m+[m[32m    li {[m
+[32m+[m[32m        @apply px-4;[m
+[32m+[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/app/layout.js b/app/layout.js[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cba5c30[m
+[1m--- /dev/null[m
+[1m+++ b/app/layout.js[m
+[36m@@ -0,0 +1,25 @@[m
+[32m+[m[32mimport Footer from "./components/Footer";[m
+[32m+[m[32mimport Header from "./components/Header";[m
+[32m+[m[32mimport "./globals.css";[m
+[32m+[m[32mimport { Raleway } from "next/font/google";[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32mconst raleway = Raleway({subsets: ["latin"]});[m
+[32m+[m
+[32m+[m[32mexport const metadata = {[m
+[32m+[m[32m  title: "Create Next App",[m
+[32m+[m[32m  description: "Generated by create next app",[m
+[32m+[m[32m};[m
+[32m+[m
+[32m+[m[32mexport default function RootLayout({ children }) {[m
+[32m+[m[32m  return ([m
+[32m+[m[32m    <html lang="en">[m
+[32m+[m[32m      <body className={raleway.className}>[m
+[32m+[m[32m        <Header />[m
+[32m+[m[32m        {children}[m
+[32m+[m[32m        <Footer />[m
+[32m+[m[32m        </body>[m
+[32m+[m[32m    </html>[m
+[32m+[m[32m  );[m
+[32m+[m[32m}[m
+[1mdiff --git a/app/page.js b/app/page.js[m
+[1mnew file mode 100644[m
+[1mindex 0000000..19867fc[m
+[1m--- /dev/null[m
+[1m+++ b/app/page.js[m
+[36m@@ -0,0 +1,116 @@[m
+[32m+[m[32m'use client'[m
+[32m+[m[32mimport Image from 'next/image'[m
+[32m+[m[32mimport About from './components/About'[m
+[32m+[m[32mimport Landing from './components/Landing'[m
+[32m+[m[32mimport Skills from './components/Skills'[m
+[32m+[m[32mimport Work from './components/Work'[m
+[32m+[m[32mimport Particles from "react-tsparticles";[m
+[32m+[m[32mimport { loadFull } from "tsparticles";[m
+[32m+[m[32mimport { useCallback } from 'react'[m
+[32m+[m[32mimport Contact from './components/Contact'[m
+[32m+[m
+[32m+[m
+[32m+[m[32mexport default function Home() {[m
+[32m+[m[32m  const particlesInit = useCallback(async engine => {[m
+[32m+[m[32m    console.log(engine);[m
+[32m+[m[32m    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets[m
+[32m+[m[32m    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready[m
+[32m+[m[32m    // starting from v2 you can add only the features you need reducing the bundle size[m
+[32m+[m[32m    await loadFull(engine);[m
+[32m+[m[32m}, []);[m
+[32m+[m
+[32m+[m[32mconst particlesLoaded = useCallback(async container => {[m
+[32m+[m[32m    await console.log(container);[m
+[32m+[m[32m}, []);[m
+[32m+[m
+[32m+[m[32m  return ([m
+[32m+[m[32m  <main>[m
+[32m+[m[32m     <Particles className="fixed z-[-1]"[m
+[32m+[m[32m            id="tsparticles"[m
+[32m+[m[32m            init={particlesInit}[m
+[32m+[m[32m            loaded={particlesLoaded}[m
+[32m+[m[32m            options={{[m
+[32m+[m[32m                background: {[m
+[32m+[m[32m                    color: {[m
+[32m+[m[32m                        value: "#181818",[m
+[32m+[m[32m                    },[m
+[32m+[m[41m                  [m
+[32m+[m[32m                },[m
+[32m+[m[32m                fpsLimit: 120,[m
+[32m+[m[32m                interactivity: {[m
+[32m+[m[32m                    events: {[m
+[32m+[m[32m                        onClick: {[m
+[32m+[m[32m                            enable: false,[m
+[32m+[m[32m                            mode: "push",[m
+[32m+[m[32m                        },[m
+[32m+[m[32m                        onHover: {[m
+[32m+[m[32m                            enable: false,[m
+[32m+[m[32m                            mode: "repulse",[m
+[32m+[m[32m                        },[m
+[32m+[m[32m                        resize: true,[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    modes: {[m
+[32m+[m[32m                        push: {[m
+[32m+[m[32m                            quantity: 4,[m
+[32m+[m[32m                        },[m
+[32m+[m[32m                        repulse: {[m
+[32m+[m[32m                            distance: 200,[m
+[32m+[m[32m                            duration: 0.4,[m
+[32m+[m[32m                        },[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                },[m
+[32m+[m[32m                particles: {[m
+[32m+[m[32m                    color: {[m
+[32m+[m[32m                        value: "#64ffda",[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    links: {[m
+[32m+[m[32m                        color: "#64ffda",[m
+[32m+[m[32m                        distance: 150,[m
+[32m+[m[32m                        enable: true,[m
+[32m+[m[32m                        opacity: 0.5,[m
+[32m+[m[32m                        width: 1,[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    collisions: {[m
+[32m+[m[32m                        enable: true,[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    move: {[m
+[32m+[m[32m                        directions: "none",[m
+[32m+[m[32m                        enable: true,[m
+[32m+[m[32m                        outModes: {[m
+[32m+[m[32m                            default: "bounce",[m
+[32m+[m[32m                        },[m
+[32m+[m[32m                        random: false,[m
+[32m+[m[32m                        speed: 2,[m
+[32m+[m[32m                        straight: false,[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    number: {[m
+[32m+[m[32m                        density: {[m
+[32m+[m[32m                            enable: true,[m
+[32m+[m[32m                            area: 800,[m
+[32m+[m[32m                        },[m
+[32m+[m[32m                        value: 20,[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    opacity: {[m
+[32m+[m[32m                        value: 0.5,[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    shape: {[m
+[32m+[m[32m                        type: "circle",[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                    size: {[m
+[32m+[m[32m                        value: { min: 1, max: 5 },[m
+[32m+[m[32m                    },[m
+[32m+[m[32m                },[m
+[32m+[m[32m                detectRetina: true,[m
+[32m+[m[41m                [m
+[32m+[m[41m  [m
+[32m+[m[41m                [m
+[32m+[m[32m            }}[m
+[32m+[m[32m        />[m
+[32m+[m[32m    <Landing />[m
+[32m+[m[32m    <About />[m
+[32m+[m[32m    <Skills />[m
+[32m+[m[32m    <Work />[m
+[32m+[m[32m    <Contact />[m
+[32m+[m[32m  </main>[m
+[32m+[m[32m  )[m
+[32m+[m[32m}[m
+[1mdiff --git a/jsconfig.json b/jsconfig.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2a2e4b3[m
+[1m--- /dev/null[m
+[1m+++ b/jsconfig.json[m
+[36m@@ -0,0 +1,7 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m  "compilerOptions": {[m
+[32m+[m[32m    "paths": {[m
+[32m+[m[32m      "@/*": ["./*"][m
+[32m+[m[32m    }[m
+[32m+[m[32m  }[m
+[32m+[m[32m}[m
+[1mdiff --git a/next.config.js b/next.config.js[m
+[1mnew file mode 100644[m
+[1mindex 0000000..767719f[m
+[1m--- /dev/null[m
+[1m+++ b/next.config.js[m
+[36m@@ -0,0 +1,4 @@[m
+[32m+[m[32m/** @type {import('next').NextConfig} */[m
+[32m+[m[32mconst nextConfig = {}[m
+[32m+[m
+[32m+[m[32mmodule.exports = nextConfig[m
+[1mdiff --git a/package-lock.json b/package-lock.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3a89028[m
+[1m--- /dev/null[m
+[1m+++ b/package-lock.json[m
+[36m@@ -0,0 +1,1885 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m  "name": "portfolio",[m
+[32m+[m[32m  "version": "0.1.0",[m
+[32m+[m[32m  "lockfileVersion": 3,[m
+[32m+[m[32m  "requires": true,[m
+[32m+[m[32m  "packages": {[m
+[32m+[m[32m    "": {[m
+[32m+[m[32m      "name": "portfolio",[m
+[32m+[m[32m      "version": "0.1.0",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "autoprefixer": "10.4.14",[m
+[32m+[m[32m        "next": "13.4.2",[m
+[32m+[m[32m        "postcss": "8.4.23",[m
+[32m+[m[32m        "react": "18.2.0",[m
+[32m+[m[32m        "react-dom": "18.2.0",[m
+[32m+[m[32m        "react-icons": "^4.8.0",[m
+[32m+[m[32m        "react-scroll": "^1.8.9",[m
+[32m+[m[32m        "react-tsparticles": "^2.9.3",[m
+[32m+[m[32m        "react-typed": "^1.2.0",[m
+[32m+[m[32m        "tailwindcss": "3.3.2",[m
+[32m+[m[32m        "tsparticles": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@alloc/quick-lru": {[m
+[32m+[m[32m      "version": "5.2.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=10"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "funding": {[m
+[32m+[m[32m        "url": "https://github.com/sponsors/sindresorhus"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@jridgewell/gen-mapping": {[m
+[32m+[m[32m      "version": "0.3.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "@jridgewell/set-array": "^1.0.1",[m
+[32m+[m[32m        "@jridgewell/sourcemap-codec": "^1.4.10",[m
+[32m+[m[32m        "@jridgewell/trace-mapping": "^0.3.9"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=6.0.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@jridgewell/resolve-uri": {[m
+[32m+[m[32m      "version": "3.1.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@jridgewell/resolve-uri/-/resolve-uri-3.1.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-F2msla3tad+Mfht5cJq7LSXcdudKTWCVYUgw6pLFOOHSTtZlj6SWNYAp+AhuqLmWdBO2X5hPrLcu8cVP8fy28w==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=6.0.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@jridgewell/set-array": {[m
+[32m+[m[32m      "version": "1.1.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@jridgewell/set-array/-/set-array-1.1.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-xnkseuNADM0gt2bs+BvhO0p78Mk762YnZdsuzFV018NoG1Sj1SCQvpSqa7XUaTam5vAGasABV9qXASMKnFMwMw==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=6.0.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@jridgewell/sourcemap-codec": {[m
+[32m+[m[32m      "version": "1.4.15",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.15.tgz",[m
+[32m+[m[32m      "integrity": "sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@jridgewell/trace-mapping": {[m
+[32m+[m[32m      "version": "0.3.18",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.18.tgz",[m
+[32m+[m[32m      "integrity": "sha512-w+niJYzMHdd7USdiH2U6869nqhD2nbfZXND5Yp93qIbEmnDNk7PD48o+YchRVpzMU7M6jVCbenTR7PA1FLQ9pA==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "@jridgewell/resolve-uri": "3.1.0",[m
+[32m+[m[32m        "@jridgewell/sourcemap-codec": "1.4.14"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@jridgewell/trace-mapping/node_modules/@jridgewell/sourcemap-codec": {[m
+[32m+[m[32m      "version": "1.4.14",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.14.tgz",[m
+[32m+[m[32m      "integrity": "sha512-XPSJHWmi394fuUuzDnGz1wiKqWfo1yXecHQMRf2l6hztTO+nPru658AyDngaBe7isIxEkRsPR3FZh+s7iVa4Uw=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@next/env": {[m
+[32m+[m[32m      "version": "13.4.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@next/env/-/env-13.4.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-Wqvo7lDeS0KGwtwg9TT9wKQ8raelmUxt+TQKWvG/xKfcmDXNOtCuaszcfCF8JzlBG1q0VhpI6CKaRMbVPMDWgw=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@next/swc-darwin-arm64": {[m
+[32m+[m[32m      "version": "13.4.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-13.4.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-6BBlqGu3ewgJflv9iLCwO1v1hqlecaIH2AotpKfVUEzUxuuDNJQZ2a4KLb4MBl8T9/vca1YuWhSqtbF6ZuUJJw==",[m
+[32m+[m[32m      "cpu": [[m
+[32m+[m[32m        "arm64"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "optional": true,[m
+[32m+[m[32m      "os": [[m
+[32m+[m[32m        "darwin"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 10"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@next/swc-darwin-x64": {[m
+[32m+[m[32m      "version": "13.4.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-13.4.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-iZuYr7ZvGLPjPmfhhMl0ISm+z8EiyLBC1bLyFwGBxkWmPXqdJ60mzuTaDSr5WezDwv0fz32HB7JHmRC6JVHSZg==",[m
+[32m+[m[32m      "cpu": [[m
+[32m+[m[32m        "x64"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "optional": true,[m
+[32m+[m[32m      "os": [[m
+[32m+[m[32m        "darwin"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 10"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@next/swc-linux-arm64-gnu": {[m
+[32m+[m[32m      "version": "13.4.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@next/swc-linux-arm64-gnu/-/swc-linux-arm64-gnu-13.4.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-2xVabFtIge6BJTcJrW8YuUnYTuQjh4jEuRuS2mscyNVOj6zUZkom3CQg+egKOoS+zh2rrro66ffSKIS+ztFJTg==",[m
+[32m+[m[32m      "cpu": [[m
+[32m+[m[32m        "arm64"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "optional": true,[m
+[32m+[m[32m      "os": [[m
+[32m+[m[32m        "linux"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 10"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@next/swc-linux-arm64-musl": {[m
+[32m+[m[32m      "version": "13.4.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@next/swc-linux-arm64-musl/-/swc-linux-arm64-musl-13.4.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-wKRCQ27xCUJx5d6IivfjYGq8oVngqIhlhSAJntgXLt7Uo9sRT/3EppMHqUZRfyuNBTbykEre1s5166z+pvRB5A==",[m
+[32m+[m[32m      "cpu": [[m
+[32m+[m[32m        "arm64"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "optional": true,[m
+[32m+[m[32m      "os": [[m
+[32m+[m[32m        "linux"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 10"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@next/swc-linux-x64-gnu": {[m
+[32m+[m[32m      "version": "13.4.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-13.4.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-NpCa+UVhhuNeaFVUP1Bftm0uqtvLWq2JTm7+Ta48+2Uqj2mNXrDIvyn1DY/ZEfmW/1yvGBRaUAv9zkMkMRixQA==",[m
+[32m+[m[32m      "cpu": [[m
+[32m+[m[32m        "x64"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "optional": true,[m
+[32m+[m[32m      "os": [[m
+[32m+[m[32m        "linux"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 10"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@next/swc-linux-x64-musl": {[m
+[32m+[m[32m      "version": "13.4.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-13.4.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-ZWVC72x0lW4aj44e3khvBrj2oSYj1bD0jESmyah3zG/3DplEy/FOtYkMzbMjHTdDSheso7zH8GIlW6CDQnKhmQ==",[m
+[32m+[m[32m      "cpu": [[m
+[32m+[m[32m        "x64"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "optional": true,[m
+[32m+[m[32m      "os": [[m
+[32m+[m[32m        "linux"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 10"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@next/swc-win32-arm64-msvc": {[m
+[32m+[m[32m      "version": "13.4.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@next/swc-win32-arm64-msvc/-/swc-win32-arm64-msvc-13.4.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-pLT+OWYpzJig5K4VKhLttlIfBcVZfr2+Xbjra0Tjs83NQSkFS+y7xx+YhCwvpEmXYLIvaggj2ONPyjbiigOvHQ==",[m
+[32m+[m[32m      "cpu": [[m
+[32m+[m[32m        "arm64"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "optional": true,[m
+[32m+[m[32m      "os": [[m
+[32m+[m[32m        "win32"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 10"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@next/swc-win32-ia32-msvc": {[m
+[32m+[m[32m      "version": "13.4.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@next/swc-win32-ia32-msvc/-/swc-win32-ia32-msvc-13.4.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-dhpiksQCyGca4WY0fJyzK3FxMDFoqMb0Cn+uDB+9GYjpU2K5//UGPQlCwiK4JHxuhg8oLMag5Nf3/IPSJNG8jw==",[m
+[32m+[m[32m      "cpu": [[m
+[32m+[m[32m        "ia32"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "optional": true,[m
+[32m+[m[32m      "os": [[m
+[32m+[m[32m        "win32"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 10"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@next/swc-win32-x64-msvc": {[m
+[32m+[m[32m      "version": "13.4.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-13.4.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-O7bort1Vld00cu8g0jHZq3cbSTUNMohOEvYqsqE10+yfohhdPHzvzO+ziJRz4Dyyr/fYKREwS7gR4JC0soSOMw==",[m
+[32m+[m[32m      "cpu": [[m
+[32m+[m[32m        "x64"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "optional": true,[m
+[32m+[m[32m      "os": [[m
+[32m+[m[32m        "win32"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 10"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@nodelib/fs.scandir": {[m
+[32m+[m[32m      "version": "2.1.5",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz",[m
+[32m+[m[32m      "integrity": "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "@nodelib/fs.stat": "2.0.5",[m
+[32m+[m[32m        "run-parallel": "^1.1.9"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 8"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@nodelib/fs.stat": {[m
+[32m+[m[32m      "version": "2.0.5",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-2.0.5.tgz",[m
+[32m+[m[32m      "integrity": "sha512-RkhPPp2zrqDAQA/2jNhnztcPAlv64XdhIp7a7454A5ovI7Bukxgt7MX7udwAu3zg1DcpPU0rz3VV1SeaqvY4+A==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 8"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@nodelib/fs.walk": {[m
+[32m+[m[32m      "version": "1.2.8",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@nodelib/fs.walk/-/fs.walk-1.2.8.tgz",[m
+[32m+[m[32m      "integrity": "sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "@nodelib/fs.scandir": "2.1.5",[m
+[32m+[m[32m        "fastq": "^1.6.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 8"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/@swc/helpers": {[m
+[32m+[m[32m      "version": "0.5.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-sJ902EfIzn1Fa+qYmjdQqh8tPsoxyBz+8yBKC2HKUxyezKJFwPGOn7pv4WY6QuQW//ySQi5lJjA/ZT9sNWWNTg==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tslib": "^2.4.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/any-promise": {[m
+[32m+[m[32m      "version": "1.3.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/any-promise/-/any-promise-1.3.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-7UvmKalWRt1wgjL1RrGxoSJW/0QZFIegpeGvZG9kjp8vrRu55XTHbwnqq2GpXm9uLbcuhxm3IqX9OB4MZR1b2A=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/anymatch": {[m
+[32m+[m[32m      "version": "3.1.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/anymatch/-/anymatch-3.1.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "normalize-path": "^3.0.0",[m
+[32m+[m[32m        "picomatch": "^2.0.4"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 8"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/arg": {[m
+[32m+[m[32m      "version": "5.0.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/arg/-/arg-5.0.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-PYjyFOLKQ9y57JvQ6QLo8dAgNqswh8M1RMJYdQduT6xbWSgK36P/Z/v+p888pM69jMMfS8Xd8F6I1kQ/I9HUGg=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/autoprefixer": {[m
+[32m+[m[32m      "version": "10.4.14",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.14.tgz",[m
+[32m+[m[32m      "integrity": "sha512-FQzyfOsTlwVzjHxKEqRIAdJx9niO6VCBCoEwax/VLSoQF29ggECcPuBqUMZ+u8jCZOPSy8b8/8KnuFbp0SaFZQ==",[m
+[32m+[m[32m      "funding": [[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "opencollective",[m
+[32m+[m[32m          "url": "https://opencollective.com/postcss/"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "tidelift",[m
+[32m+[m[32m          "url": "https://tidelift.com/funding/github/npm/autoprefixer"[m
+[32m+[m[32m        }[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "browserslist": "^4.21.5",[m
+[32m+[m[32m        "caniuse-lite": "^1.0.30001464",[m
+[32m+[m[32m        "fraction.js": "^4.2.0",[m
+[32m+[m[32m        "normalize-range": "^0.1.2",[m
+[32m+[m[32m        "picocolors": "^1.0.0",[m
+[32m+[m[32m        "postcss-value-parser": "^4.2.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "bin": {[m
+[32m+[m[32m        "autoprefixer": "bin/autoprefixer"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": "^10 || ^12 || >=14"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "peerDependencies": {[m
+[32m+[m[32m        "postcss": "^8.1.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/balanced-match": {[m
+[32m+[m[32m      "version": "1.0.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/binary-extensions": {[m
+[32m+[m[32m      "version": "2.2.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=8"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/brace-expansion": {[m
+[32m+[m[32m      "version": "1.1.11",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz",[m
+[32m+[m[32m      "integrity": "sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "balanced-match": "^1.0.0",[m
+[32m+[m[32m        "concat-map": "0.0.1"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/braces": {[m
+[32m+[m[32m      "version": "3.0.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/braces/-/braces-3.0.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "fill-range": "^7.0.1"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=8"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/browserslist": {[m
+[32m+[m[32m      "version": "4.21.5",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/browserslist/-/browserslist-4.21.5.tgz",[m
+[32m+[m[32m      "integrity": "sha512-tUkiguQGW7S3IhB7N+c2MV/HZPSCPAAiYBZXLsBhFB/PCy6ZKKsZrmBayHV9fdGV/ARIfJ14NkxKzRDjvp7L6w==",[m
+[32m+[m[32m      "funding": [[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "opencollective",[m
+[32m+[m[32m          "url": "https://opencollective.com/browserslist"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "tidelift",[m
+[32m+[m[32m          "url": "https://tidelift.com/funding/github/npm/browserslist"[m
+[32m+[m[32m        }[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "caniuse-lite": "^1.0.30001449",[m
+[32m+[m[32m        "electron-to-chromium": "^1.4.284",[m
+[32m+[m[32m        "node-releases": "^2.0.8",[m
+[32m+[m[32m        "update-browserslist-db": "^1.0.10"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "bin": {[m
+[32m+[m[32m        "browserslist": "cli.js"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": "^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/busboy": {[m
+[32m+[m[32m      "version": "1.6.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/busboy/-/busboy-1.6.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "streamsearch": "^1.1.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=10.16.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/camelcase-css": {[m
+[32m+[m[32m      "version": "2.0.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/camelcase-css/-/camelcase-css-2.0.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 6"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/caniuse-lite": {[m
+[32m+[m[32m      "version": "1.0.30001487",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001487.tgz",[m
+[32m+[m[32m      "integrity": "sha512-83564Z3yWGqXsh2vaH/mhXfEM0wX+NlBCm1jYHOb97TrTWJEmPTccZgeLTPBUUb0PNVo+oomb7wkimZBIERClA==",[m
+[32m+[m[32m      "funding": [[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "opencollective",[m
+[32m+[m[32m          "url": "https://opencollective.com/browserslist"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "tidelift",[m
+[32m+[m[32m          "url": "https://tidelift.com/funding/github/npm/caniuse-lite"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "github",[m
+[32m+[m[32m          "url": "https://github.com/sponsors/ai"[m
+[32m+[m[32m        }[m
+[32m+[m[32m      ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/chokidar": {[m
+[32m+[m[32m      "version": "3.5.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/chokidar/-/chokidar-3.5.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==",[m
+[32m+[m[32m      "funding": [[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "individual",[m
+[32m+[m[32m          "url": "https://paulmillr.com/funding/"[m
+[32m+[m[32m        }[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "anymatch": "~3.1.2",[m
+[32m+[m[32m        "braces": "~3.0.2",[m
+[32m+[m[32m        "glob-parent": "~5.1.2",[m
+[32m+[m[32m        "is-binary-path": "~2.1.0",[m
+[32m+[m[32m        "is-glob": "~4.0.1",[m
+[32m+[m[32m        "normalize-path": "~3.0.0",[m
+[32m+[m[32m        "readdirp": "~3.6.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 8.10.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "optionalDependencies": {[m
+[32m+[m[32m        "fsevents": "~2.3.2"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/chokidar/node_modules/glob-parent": {[m
+[32m+[m[32m      "version": "5.1.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "is-glob": "^4.0.1"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 6"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/client-only": {[m
+[32m+[m[32m      "version": "0.0.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/client-only/-/client-only-0.0.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/commander": {[m
+[32m+[m[32m      "version": "4.1.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/commander/-/commander-4.1.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 6"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/concat-map": {[m
+[32m+[m[32m      "version": "0.0.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/cssesc": {[m
+[32m+[m[32m      "version": "3.0.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/cssesc/-/cssesc-3.0.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==",[m
+[32m+[m[32m      "bin": {[m
+[32m+[m[32m        "cssesc": "bin/cssesc"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=4"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/didyoumean": {[m
+[32m+[m[32m      "version": "1.2.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/didyoumean/-/didyoumean-1.2.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/dlv": {[m
+[32m+[m[32m      "version": "1.1.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/dlv/-/dlv-1.1.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/electron-to-chromium": {[m
+[32m+[m[32m      "version": "1.4.396",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.396.tgz",[m
+[32m+[m[32m      "integrity": "sha512-pqKTdqp/c5vsrc0xUPYXTDBo9ixZuGY8es4ZOjjd6HD6bFYbu5QA09VoW3fkY4LF1T0zYk86lN6bZnNlBuOpdQ=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/escalade": {[m
+[32m+[m[32m      "version": "3.1.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/escalade/-/escalade-3.1.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=6"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/fast-deep-equal": {[m
+[32m+[m[32m      "version": "3.1.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/fast-glob": {[m
+[32m+[m[32m      "version": "3.2.12",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/fast-glob/-/fast-glob-3.2.12.tgz",[m
+[32m+[m[32m      "integrity": "sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "@nodelib/fs.stat": "^2.0.2",[m
+[32m+[m[32m        "@nodelib/fs.walk": "^1.2.3",[m
+[32m+[m[32m        "glob-parent": "^5.1.2",[m
+[32m+[m[32m        "merge2": "^1.3.0",[m
+[32m+[m[32m        "micromatch": "^4.0.4"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=8.6.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/fast-glob/node_modules/glob-parent": {[m
+[32m+[m[32m      "version": "5.1.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "is-glob": "^4.0.1"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 6"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/fastq": {[m
+[32m+[m[32m      "version": "1.15.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/fastq/-/fastq-1.15.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "reusify": "^1.0.4"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/fill-range": {[m
+[32m+[m[32m      "version": "7.0.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/fill-range/-/fill-range-7.0.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "to-regex-range": "^5.0.1"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=8"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/fraction.js": {[m
+[32m+[m[32m      "version": "4.2.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/fraction.js/-/fraction.js-4.2.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": "*"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "funding": {[m
+[32m+[m[32m        "type": "patreon",[m
+[32m+[m[32m        "url": "https://www.patreon.com/infusion"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/fs.realpath": {[m
+[32m+[m[32m      "version": "1.0.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/fsevents": {[m
+[32m+[m[32m      "version": "2.3.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==",[m
+[32m+[m[32m      "hasInstallScript": true,[m
+[32m+[m[32m      "optional": true,[m
+[32m+[m[32m      "os": [[m
+[32m+[m[32m        "darwin"[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": "^8.16.0 || ^10.6.0 || >=11.0.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/function-bind": {[m
+[32m+[m[32m      "version": "1.1.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/glob": {[m
+[32m+[m[32m      "version": "7.1.6",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/glob/-/glob-7.1.6.tgz",[m
+[32m+[m[32m      "integrity": "sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "fs.realpath": "^1.0.0",[m
+[32m+[m[32m        "inflight": "^1.0.4",[m
+[32m+[m[32m        "inherits": "2",[m
+[32m+[m[32m        "minimatch": "^3.0.4",[m
+[32m+[m[32m        "once": "^1.3.0",[m
+[32m+[m[32m        "path-is-absolute": "^1.0.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": "*"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "funding": {[m
+[32m+[m[32m        "url": "https://github.com/sponsors/isaacs"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/glob-parent": {[m
+[32m+[m[32m      "version": "6.0.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/glob-parent/-/glob-parent-6.0.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-XxwI8EOhVQgWp6iDL+3b0r86f4d6AX6zSU55HfB4ydCEuXLXc5FcYeOu+nnGftS4TEju/11rt4KJPTMgbfmv4A==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "is-glob": "^4.0.3"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=10.13.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/has": {[m
+[32m+[m[32m      "version": "1.0.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/has/-/has-1.0.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "function-bind": "^1.1.1"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 0.4.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/inflight": {[m
+[32m+[m[32m      "version": "1.0.6",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz",[m
+[32m+[m[32m      "integrity": "sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "once": "^1.3.0",[m
+[32m+[m[32m        "wrappy": "1"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/inherits": {[m
+[32m+[m[32m      "version": "2.0.4",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz",[m
+[32m+[m[32m      "integrity": "sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/is-binary-path": {[m
+[32m+[m[32m      "version": "2.1.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/is-binary-path/-/is-binary-path-2.1.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "binary-extensions": "^2.0.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=8"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/is-core-module": {[m
+[32m+[m[32m      "version": "2.12.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/is-core-module/-/is-core-module-2.12.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-RECHCBCd/viahWmwj6enj19sKbHfJrddi/6cBDsNTKbNq0f7VeaUkBo60BqzvPqo/W54ChS62Z5qyun7cfOMqQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "has": "^1.0.3"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "funding": {[m
+[32m+[m[32m        "url": "https://github.com/sponsors/ljharb"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/is-extglob": {[m
+[32m+[m[32m      "version": "2.1.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/is-extglob/-/is-extglob-2.1.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=0.10.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/is-glob": {[m
+[32m+[m[32m      "version": "4.0.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/is-glob/-/is-glob-4.0.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-xelSayHH36ZgE7ZWhli7pW34hNbNl8Ojv5KVmkJD4hBdD3th8Tfk9vYasLM+mXWOZhFkgZfxhLSnrwRr4elSSg==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "is-extglob": "^2.1.1"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=0.10.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/is-number": {[m
+[32m+[m[32m      "version": "7.0.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=0.12.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/jiti": {[m
+[32m+[m[32m      "version": "1.18.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/jiti/-/jiti-1.18.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-QAdOptna2NYiSSpv0O/BwoHBSmz4YhpzJHyi+fnMRTXFjp7B8i/YG5Z8IfusxB1ufjcD2Sre1F3R+nX3fvy7gg==",[m
+[32m+[m[32m      "bin": {[m
+[32m+[m[32m        "jiti": "bin/jiti.js"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/js-tokens": {[m
+[32m+[m[32m      "version": "4.0.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/lilconfig": {[m
+[32m+[m[32m      "version": "2.1.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/lilconfig/-/lilconfig-2.1.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=10"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/lines-and-columns": {[m
+[32m+[m[32m      "version": "1.2.4",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/lines-and-columns/-/lines-and-columns-1.2.4.tgz",[m
+[32m+[m[32m      "integrity": "sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/lodash.throttle": {[m
+[32m+[m[32m      "version": "4.1.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/lodash.throttle/-/lodash.throttle-4.1.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/loose-envify": {[m
+[32m+[m[32m      "version": "1.4.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "js-tokens": "^3.0.0 || ^4.0.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "bin": {[m
+[32m+[m[32m        "loose-envify": "cli.js"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/merge2": {[m
+[32m+[m[32m      "version": "1.4.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/merge2/-/merge2-1.4.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 8"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/micromatch": {[m
+[32m+[m[32m      "version": "4.0.5",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/micromatch/-/micromatch-4.0.5.tgz",[m
+[32m+[m[32m      "integrity": "sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "braces": "^3.0.2",[m
+[32m+[m[32m        "picomatch": "^2.3.1"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=8.6"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/minimatch": {[m
+[32m+[m[32m      "version": "3.1.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-3.1.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "brace-expansion": "^1.1.7"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": "*"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/mz": {[m
+[32m+[m[32m      "version": "2.7.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/mz/-/mz-2.7.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "any-promise": "^1.0.0",[m
+[32m+[m[32m        "object-assign": "^4.0.1",[m
+[32m+[m[32m        "thenify-all": "^1.0.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/nanoid": {[m
+[32m+[m[32m      "version": "3.3.6",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.6.tgz",[m
+[32m+[m[32m      "integrity": "sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==",[m
+[32m+[m[32m      "funding": [[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "github",[m
+[32m+[m[32m          "url": "https://github.com/sponsors/ai"[m
+[32m+[m[32m        }[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "bin": {[m
+[32m+[m[32m        "nanoid": "bin/nanoid.cjs"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": "^10 || ^12 || ^13.7 || ^14 || >=15.0.1"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/next": {[m
+[32m+[m[32m      "version": "13.4.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/next/-/next-13.4.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-aNFqLs3a3nTGvLWlO9SUhCuMUHVPSFQC0+tDNGAsDXqx+WJDFSbvc233gOJ5H19SBc7nw36A9LwQepOJ2u/8Kg==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "@next/env": "13.4.2",[m
+[32m+[m[32m        "@swc/helpers": "0.5.1",[m
+[32m+[m[32m        "busboy": "1.6.0",[m
+[32m+[m[32m        "caniuse-lite": "^1.0.30001406",[m
+[32m+[m[32m        "postcss": "8.4.14",[m
+[32m+[m[32m        "styled-jsx": "5.1.1",[m
+[32m+[m[32m        "zod": "3.21.4"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "bin": {[m
+[32m+[m[32m        "next": "dist/bin/next"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=16.8.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "optionalDependencies": {[m
+[32m+[m[32m        "@next/swc-darwin-arm64": "13.4.2",[m
+[32m+[m[32m        "@next/swc-darwin-x64": "13.4.2",[m
+[32m+[m[32m        "@next/swc-linux-arm64-gnu": "13.4.2",[m
+[32m+[m[32m        "@next/swc-linux-arm64-musl": "13.4.2",[m
+[32m+[m[32m        "@next/swc-linux-x64-gnu": "13.4.2",[m
+[32m+[m[32m        "@next/swc-linux-x64-musl": "13.4.2",[m
+[32m+[m[32m        "@next/swc-win32-arm64-msvc": "13.4.2",[m
+[32m+[m[32m        "@next/swc-win32-ia32-msvc": "13.4.2",[m
+[32m+[m[32m        "@next/swc-win32-x64-msvc": "13.4.2"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "peerDependencies": {[m
+[32m+[m[32m        "@opentelemetry/api": "^1.1.0",[m
+[32m+[m[32m        "fibers": ">= 3.1.0",[m
+[32m+[m[32m        "node-sass": "^6.0.0 || ^7.0.0",[m
+[32m+[m[32m        "react": "^18.2.0",[m
+[32m+[m[32m        "react-dom": "^18.2.0",[m
+[32m+[m[32m        "sass": "^1.3.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "peerDependenciesMeta": {[m
+[32m+[m[32m        "@opentelemetry/api": {[m
+[32m+[m[32m          "optional": true[m
+[32m+[m[32m        },[m
+[32m+[m[32m        "fibers": {[m
+[32m+[m[32m          "optional": true[m
+[32m+[m[32m        },[m
+[32m+[m[32m        "node-sass": {[m
+[32m+[m[32m          "optional": true[m
+[32m+[m[32m        },[m
+[32m+[m[32m        "sass": {[m
+[32m+[m[32m          "optional": true[m
+[32m+[m[32m        }[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/next/node_modules/postcss": {[m
+[32m+[m[32m      "version": "8.4.14",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/postcss/-/postcss-8.4.14.tgz",[m
+[32m+[m[32m      "integrity": "sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig==",[m
+[32m+[m[32m      "funding": [[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "opencollective",[m
+[32m+[m[32m          "url": "https://opencollective.com/postcss/"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "tidelift",[m
+[32m+[m[32m          "url": "https://tidelift.com/funding/github/npm/postcss"[m
+[32m+[m[32m        }[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "nanoid": "^3.3.4",[m
+[32m+[m[32m        "picocolors": "^1.0.0",[m
+[32m+[m[32m        "source-map-js": "^1.0.2"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": "^10 || ^12 || >=14"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/node-releases": {[m
+[32m+[m[32m      "version": "2.0.10",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/node-releases/-/node-releases-2.0.10.tgz",[m
+[32m+[m[32m      "integrity": "sha512-5GFldHPXVG/YZmFzJvKK2zDSzPKhEp0+ZR5SVaoSag9fsL5YgHbUHDfnG5494ISANDcK4KwPXAx2xqVEydmd7w=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/normalize-path": {[m
+[32m+[m[32m      "version": "3.0.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=0.10.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/normalize-range": {[m
+[32m+[m[32m      "version": "0.1.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/normalize-range/-/normalize-range-0.1.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=0.10.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/object-assign": {[m
+[32m+[m[32m      "version": "4.1.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=0.10.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/object-hash": {[m
+[32m+[m[32m      "version": "3.0.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/object-hash/-/object-hash-3.0.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-RSn9F68PjH9HqtltsSnqYC1XXoWe9Bju5+213R98cNGttag9q9yAOTzdbsqvIa7aNm5WffBZFpWYr2aWrklWAw==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 6"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/once": {[m
+[32m+[m[32m      "version": "1.4.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/once/-/once-1.4.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "wrappy": "1"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/path-is-absolute": {[m
+[32m+[m[32m      "version": "1.0.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=0.10.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/path-parse": {[m
+[32m+[m[32m      "version": "1.0.7",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/path-parse/-/path-parse-1.0.7.tgz",[m
+[32m+[m[32m      "integrity": "sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/picocolors": {[m
+[32m+[m[32m      "version": "1.0.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/picocolors/-/picocolors-1.0.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/picomatch": {[m
+[32m+[m[32m      "version": "2.3.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=8.6"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "funding": {[m
+[32m+[m[32m        "url": "https://github.com/sponsors/jonschlinkert"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/pify": {[m
+[32m+[m[32m      "version": "2.3.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/pify/-/pify-2.3.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=0.10.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/pirates": {[m
+[32m+[m[32m      "version": "4.0.5",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/pirates/-/pirates-4.0.5.tgz",[m
+[32m+[m[32m      "integrity": "sha512-8V9+HQPupnaXMA23c5hvl69zXvTwTzyAYasnkb0Tts4XvO4CliqONMOnvlq26rkhLC3nWDFBJf73LU1e1VZLaQ==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 6"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/postcss": {[m
+[32m+[m[32m      "version": "8.4.23",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/postcss/-/postcss-8.4.23.tgz",[m
+[32m+[m[32m      "integrity": "sha512-bQ3qMcpF6A/YjR55xtoTr0jGOlnPOKAIMdOWiv0EIT6HVPEaJiJB4NLljSbiHoC2RX7DN5Uvjtpbg1NPdwv1oA==",[m
+[32m+[m[32m      "funding": [[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "opencollective",[m
+[32m+[m[32m          "url": "https://opencollective.com/postcss/"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "tidelift",[m
+[32m+[m[32m          "url": "https://tidelift.com/funding/github/npm/postcss"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "github",[m
+[32m+[m[32m          "url": "https://github.com/sponsors/ai"[m
+[32m+[m[32m        }[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "nanoid": "^3.3.6",[m
+[32m+[m[32m        "picocolors": "^1.0.0",[m
+[32m+[m[32m        "source-map-js": "^1.0.2"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": "^10 || ^12 || >=14"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/postcss-import": {[m
+[32m+[m[32m      "version": "15.1.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/postcss-import/-/postcss-import-15.1.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "postcss-value-parser": "^4.0.0",[m
+[32m+[m[32m        "read-cache": "^1.0.0",[m
+[32m+[m[32m        "resolve": "^1.1.7"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=14.0.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "peerDependencies": {[m
+[32m+[m[32m        "postcss": "^8.0.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/postcss-js": {[m
+[32m+[m[32m      "version": "4.0.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/postcss-js/-/postcss-js-4.0.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-dDLF8pEO191hJMtlHFPRa8xsizHaM82MLfNkUHdUtVEV3tgTp5oj+8qbEqYM57SLfc74KSbw//4SeJma2LRVIw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "camelcase-css": "^2.0.1"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": "^12 || ^14 || >= 16"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "funding": {[m
+[32m+[m[32m        "type": "opencollective",[m
+[32m+[m[32m        "url": "https://opencollective.com/postcss/"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "peerDependencies": {[m
+[32m+[m[32m        "postcss": "^8.4.21"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/postcss-load-config": {[m
+[32m+[m[32m      "version": "4.0.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/postcss-load-config/-/postcss-load-config-4.0.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-vEJIc8RdiBRu3oRAI0ymerOn+7rPuMvRXslTvZUKZonDHFIczxztIyJ1urxM1x9JXEikvpWWTUUqal5j/8QgvA==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "lilconfig": "^2.0.5",[m
+[32m+[m[32m        "yaml": "^2.1.1"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 14"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "funding": {[m
+[32m+[m[32m        "type": "opencollective",[m
+[32m+[m[32m        "url": "https://opencollective.com/postcss/"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "peerDependencies": {[m
+[32m+[m[32m        "postcss": ">=8.0.9",[m
+[32m+[m[32m        "ts-node": ">=9.0.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "peerDependenciesMeta": {[m
+[32m+[m[32m        "postcss": {[m
+[32m+[m[32m          "optional": true[m
+[32m+[m[32m        },[m
+[32m+[m[32m        "ts-node": {[m
+[32m+[m[32m          "optional": true[m
+[32m+[m[32m        }[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/postcss-nested": {[m
+[32m+[m[32m      "version": "6.0.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/postcss-nested/-/postcss-nested-6.0.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-mEp4xPMi5bSWiMbsgoPfcP74lsWLHkQbZc3sY+jWYd65CUwXrUaTp0fmNpa01ZcETKlIgUdFN/MpS2xZtqL9dQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "postcss-selector-parser": "^6.0.11"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=12.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "funding": {[m
+[32m+[m[32m        "type": "opencollective",[m
+[32m+[m[32m        "url": "https://opencollective.com/postcss/"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "peerDependencies": {[m
+[32m+[m[32m        "postcss": "^8.2.14"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/postcss-selector-parser": {[m
+[32m+[m[32m      "version": "6.0.13",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-6.0.13.tgz",[m
+[32m+[m[32m      "integrity": "sha512-EaV1Gl4mUEV4ddhDnv/xtj7sxwrwxdetHdWUGnT4VJQf+4d05v6lHYZr8N573k5Z0BViss7BDhfWtKS3+sfAqQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "cssesc": "^3.0.0",[m
+[32m+[m[32m        "util-deprecate": "^1.0.2"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=4"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/postcss-value-parser": {[m
+[32m+[m[32m      "version": "4.2.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/prop-types": {[m
+[32m+[m[32m      "version": "15.8.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "loose-envify": "^1.4.0",[m
+[32m+[m[32m        "object-assign": "^4.1.1",[m
+[32m+[m[32m        "react-is": "^16.13.1"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/queue-microtask": {[m
+[32m+[m[32m      "version": "1.2.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==",[m
+[32m+[m[32m      "funding": [[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "github",[m
+[32m+[m[32m          "url": "https://github.com/sponsors/feross"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "patreon",[m
+[32m+[m[32m          "url": "https://www.patreon.com/feross"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "consulting",[m
+[32m+[m[32m          "url": "https://feross.org/support"[m
+[32m+[m[32m        }[m
+[32m+[m[32m      ][m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/react": {[m
+[32m+[m[32m      "version": "18.2.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "loose-envify": "^1.1.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=0.10.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/react-dom": {[m
+[32m+[m[32m      "version": "18.2.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "loose-envify": "^1.1.0",[m
+[32m+[m[32m        "scheduler": "^0.23.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "peerDependencies": {[m
+[32m+[m[32m        "react": "^18.2.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/react-icons": {[m
+[32m+[m[32m      "version": "4.8.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/react-icons/-/react-icons-4.8.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-N6+kOLcihDiAnj5Czu637waJqSnwlMNROzVZMhfX68V/9bu9qHaMIJC4UdozWoOk57gahFCNHwVvWzm0MTzRjg==",[m
+[32m+[m[32m      "peerDependencies": {[m
+[32m+[m[32m        "react": "*"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/react-is": {[m
+[32m+[m[32m      "version": "16.13.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/react-scroll": {[m
+[32m+[m[32m      "version": "1.8.9",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/react-scroll/-/react-scroll-1.8.9.tgz",[m
+[32m+[m[32m      "integrity": "sha512-9m7ztraiX/l6L7erzYAD3fhnveNckei6/NkWfqwN2e0FRdoE2W6Pk4oi2Nah7mWpPCPAeIgegfaqZACTimPOwg==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "lodash.throttle": "^4.1.1",[m
+[32m+[m[32m        "prop-types": "^15.7.2"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "peerDependencies": {[m
+[32m+[m[32m        "react": "^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0",[m
+[32m+[m[32m        "react-dom": "^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/react-tsparticles": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/react-tsparticles/-/react-tsparticles-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-QSo5Y0iXcXzOKbOira+kn5Z9Yv0ugk4swcn44HkdublSS8XAmV2QiQSd9T2mdM1tGZ8xVSuqsfdgGWfRC1KKng==",[m
+[32m+[m[32m      "funding": [[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "github",[m
+[32m+[m[32m          "url": "https://github.com/sponsors/matteobruni"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "buymeacoffee",[m
+[32m+[m[32m          "url": "https://www.buymeacoffee.com/matteobruni"[m
+[32m+[m[32m        }[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "hasInstallScript": true,[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "fast-deep-equal": "^3.1.3",[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "peerDependencies": {[m
+[32m+[m[32m        "react": ">=16"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/react-typed": {[m
+[32m+[m[32m      "version": "1.2.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/react-typed/-/react-typed-1.2.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-aDsaA6zkjAFJs8285APOqE85l/kwJ0/ZJmBhARwUrza4TTttrMM5FcMCGEDdThdfUdHo/0l9WXmxp1m2ik4qdw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "prop-types": "^15.6.0",[m
+[32m+[m[32m        "typed.js": "^2.0.6"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "peerDependencies": {[m
+[32m+[m[32m        "react": "^16.3.0",[m
+[32m+[m[32m        "react-dom": "^16.3.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/read-cache": {[m
+[32m+[m[32m      "version": "1.0.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/read-cache/-/read-cache-1.0.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "pify": "^2.3.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/readdirp": {[m
+[32m+[m[32m      "version": "3.6.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/readdirp/-/readdirp-3.6.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "picomatch": "^2.2.1"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=8.10.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/resolve": {[m
+[32m+[m[32m      "version": "1.22.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/resolve/-/resolve-1.22.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-Sb+mjNHOULsBv818T40qSPeRiuWLyaGMa5ewydRLFimneixmVy2zdivRl+AF6jaYPC8ERxGDmFSiqui6SfPd+g==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "is-core-module": "^2.11.0",[m
+[32m+[m[32m        "path-parse": "^1.0.7",[m
+[32m+[m[32m        "supports-preserve-symlinks-flag": "^1.0.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "bin": {[m
+[32m+[m[32m        "resolve": "bin/resolve"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "funding": {[m
+[32m+[m[32m        "url": "https://github.com/sponsors/ljharb"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/reusify": {[m
+[32m+[m[32m      "version": "1.0.4",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/reusify/-/reusify-1.0.4.tgz",[m
+[32m+[m[32m      "integrity": "sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "iojs": ">=1.0.0",[m
+[32m+[m[32m        "node": ">=0.10.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/run-parallel": {[m
+[32m+[m[32m      "version": "1.2.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/run-parallel/-/run-parallel-1.2.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==",[m
+[32m+[m[32m      "funding": [[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "github",[m
+[32m+[m[32m          "url": "https://github.com/sponsors/feross"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "patreon",[m
+[32m+[m[32m          "url": "https://www.patreon.com/feross"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "consulting",[m
+[32m+[m[32m          "url": "https://feross.org/support"[m
+[32m+[m[32m        }[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "queue-microtask": "^1.2.2"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/scheduler": {[m
+[32m+[m[32m      "version": "0.23.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "loose-envify": "^1.1.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/source-map-js": {[m
+[32m+[m[32m      "version": "1.0.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.0.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=0.10.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/streamsearch": {[m
+[32m+[m[32m      "version": "1.1.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/streamsearch/-/streamsearch-1.1.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=10.0.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/styled-jsx": {[m
+[32m+[m[32m      "version": "5.1.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/styled-jsx/-/styled-jsx-5.1.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "client-only": "0.0.1"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 12.0.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "peerDependencies": {[m
+[32m+[m[32m        "react": ">= 16.8.0 || 17.x.x || ^18.0.0-0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "peerDependenciesMeta": {[m
+[32m+[m[32m        "@babel/core": {[m
+[32m+[m[32m          "optional": true[m
+[32m+[m[32m        },[m
+[32m+[m[32m        "babel-plugin-macros": {[m
+[32m+[m[32m          "optional": true[m
+[32m+[m[32m        }[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/sucrase": {[m
+[32m+[m[32m      "version": "3.32.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/sucrase/-/sucrase-3.32.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-ydQOU34rpSyj2TGyz4D2p8rbktIOZ8QY9s+DGLvFU1i5pWJE8vkpruCjGCMHsdXwnD7JDcS+noSwM/a7zyNFDQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "@jridgewell/gen-mapping": "^0.3.2",[m
+[32m+[m[32m        "commander": "^4.0.0",[m
+[32m+[m[32m        "glob": "7.1.6",[m
+[32m+[m[32m        "lines-and-columns": "^1.1.6",[m
+[32m+[m[32m        "mz": "^2.7.0",[m
+[32m+[m[32m        "pirates": "^4.0.1",[m
+[32m+[m[32m        "ts-interface-checker": "^0.1.9"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "bin": {[m
+[32m+[m[32m        "sucrase": "bin/sucrase",[m
+[32m+[m[32m        "sucrase-node": "bin/sucrase-node"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=8"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/supports-preserve-symlinks-flag": {[m
+[32m+[m[32m      "version": "1.0.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 0.4"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "funding": {[m
+[32m+[m[32m        "url": "https://github.com/sponsors/ljharb"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tailwindcss": {[m
+[32m+[m[32m      "version": "3.3.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.3.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-9jPkMiIBXvPc2KywkraqsUfbfj+dHDb+JPWtSJa9MLFdrPyazI7q6WX2sUrm7R9eVR7qqv3Pas7EvQFzxKnI6w==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "@alloc/quick-lru": "^5.2.0",[m
+[32m+[m[32m        "arg": "^5.0.2",[m
+[32m+[m[32m        "chokidar": "^3.5.3",[m
+[32m+[m[32m        "didyoumean": "^1.2.2",[m
+[32m+[m[32m        "dlv": "^1.1.3",[m
+[32m+[m[32m        "fast-glob": "^3.2.12",[m
+[32m+[m[32m        "glob-parent": "^6.0.2",[m
+[32m+[m[32m        "is-glob": "^4.0.3",[m
+[32m+[m[32m        "jiti": "^1.18.2",[m
+[32m+[m[32m        "lilconfig": "^2.1.0",[m
+[32m+[m[32m        "micromatch": "^4.0.5",[m
+[32m+[m[32m        "normalize-path": "^3.0.0",[m
+[32m+[m[32m        "object-hash": "^3.0.0",[m
+[32m+[m[32m        "picocolors": "^1.0.0",[m
+[32m+[m[32m        "postcss": "^8.4.23",[m
+[32m+[m[32m        "postcss-import": "^15.1.0",[m
+[32m+[m[32m        "postcss-js": "^4.0.1",[m
+[32m+[m[32m        "postcss-load-config": "^4.0.1",[m
+[32m+[m[32m        "postcss-nested": "^6.0.1",[m
+[32m+[m[32m        "postcss-selector-parser": "^6.0.11",[m
+[32m+[m[32m        "postcss-value-parser": "^4.2.0",[m
+[32m+[m[32m        "resolve": "^1.22.2",[m
+[32m+[m[32m        "sucrase": "^3.32.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "bin": {[m
+[32m+[m[32m        "tailwind": "lib/cli.js",[m
+[32m+[m[32m        "tailwindcss": "lib/cli.js"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=14.0.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/thenify": {[m
+[32m+[m[32m      "version": "3.3.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/thenify/-/thenify-3.3.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-RVZSIV5IG10Hk3enotrhvz0T9em6cyHBLkH/YAZuKqd8hRkKhSfCGIcP2KUY0EPxndzANBmNllzWPwak+bheSw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "any-promise": "^1.0.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/thenify-all": {[m
+[32m+[m[32m      "version": "1.6.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/thenify-all/-/thenify-all-1.6.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-RNxQH/qI8/t3thXJDwcstUO4zeqo64+Uy/+sNVRBx4Xn2OX+OZ9oP+iJnNFqplFra2ZUVeKCSa2oVWi3T4uVmA==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "thenify": ">= 3.1.0 < 4"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=0.8"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/to-regex-range": {[m
+[32m+[m[32m      "version": "5.0.1",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz",[m
+[32m+[m[32m      "integrity": "sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "is-number": "^7.0.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">=8.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/ts-interface-checker": {[m
+[32m+[m[32m      "version": "0.1.13",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz",[m
+[32m+[m[32m      "integrity": "sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tslib": {[m
+[32m+[m[32m      "version": "2.5.0",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tslib/-/tslib-2.5.0.tgz",[m
+[32m+[m[32m      "integrity": "sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles/-/tsparticles-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-9NB+zrmR3uaj/k0RZ8Awa4lhpq2PqYFR/jUhia/Z4tKwvNdIR4xkpd4NkkGn/xmqRFeN658xHxOE+yVU+y+XFA==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-interaction-external-trail": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-plugin-absorbers": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-plugin-emitters": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-slim": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-updater-destroy": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-updater-roll": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-updater-tilt": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-updater-twinkle": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-updater-wobble": "^2.9.3"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "funding": {[m
+[32m+[m[32m        "type": "github",[m
+[32m+[m[32m        "url": "https://github.com/sponsors/matteobruni"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-engine": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-engine/-/tsparticles-engine-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-iAD8LyRH//kx10fDMm6AfQV6dRHs1ZacUUHqVwfutcqM4x1IV2ygpjk0X87LKCnBxYeIMG78+tlxXpnpwUccOg==",[m
+[32m+[m[32m      "funding": [[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "github",[m
+[32m+[m[32m          "url": "https://github.com/sponsors/matteobruni"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "buymeacoffee",[m
+[32m+[m[32m          "url": "https://www.buymeacoffee.com/matteobruni"[m
+[32m+[m[32m        }[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "hasInstallScript": true[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-interaction-external-attract": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-interaction-external-attract/-/tsparticles-interaction-external-attract-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-iNAu0ECKLpUXQYJ84slBJjQVvvTW4S/8pqDylB+WCj52xh4xbhj0TxaaM4zpId9TUDCPd8F7GoTi2ZCDJKlodQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-interaction-external-bounce": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-interaction-external-bounce/-/tsparticles-interaction-external-bounce-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-RuZaqSXpanEpA0ETXArIzKAhR3E1fKOpLEJkUeDeZRNMYEmMZfh0JR/vQ2qSIR6r24z+DuIbhz0h+K6zu0lmvg==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-interaction-external-bubble": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-interaction-external-bubble/-/tsparticles-interaction-external-bubble-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-jMgCViRTydEm2Gks5BeJH4z7Qetnmideheipw5UKDlKghGSTHhm7R7LeOkcOWqJI5ul8yoSFi+uQfL85aIUFZw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-interaction-external-connect": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-interaction-external-connect/-/tsparticles-interaction-external-connect-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-SCtYe29pDKUxxjyp0n6l1YrayynHyvDrnygGWGIYrAp/oUXtIUHjEotu3M5JkwnUMxHyGkMB1cK8wtmY3dIiUA==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-interaction-external-grab": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-interaction-external-grab/-/tsparticles-interaction-external-grab-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-424WCIR7guHPuSVzhqYXbUM4YS5cR/Tv6qpi5EeX/bSIdajZDSjmhin9HjBK219T9sedfdJnhioOsy42Wt1YbA==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-interaction-external-pause": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-interaction-external-pause/-/tsparticles-interaction-external-pause-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-idVup6nQ59W8FSyq+zg2zUlW5RKnq5cWua/mAKEZuQFrYV01HA22I9T8UyPcquxgtlPJX+0L/PfZlBjmr3qayw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-interaction-external-push": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-interaction-external-push/-/tsparticles-interaction-external-push-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-KNWHJmAxFUpw2is6E3gMXNZ6VghEVxZEFx0if/PLALgGOTKVWiEyh/lyJ660Ftfec1m4oW/SI7gCR2r0BXjnpQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-interaction-external-remove": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-interaction-external-remove/-/tsparticles-interaction-external-remove-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-35XRqQe4cCCjRIFkvRvjsIVeUI7+i9nqUsX4bkxK9H6kv+GbC4lS98peGk6PNPetJn6yeJivkrP64VjPVGFEFQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-interaction-external-repulse": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-interaction-external-repulse/-/tsparticles-interaction-external-repulse-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-Q4A4n0Sl6tEWJVGvXhEr/x5PwsHfjCZfwfHhEF9CmzgSnVr75pQfNi09GlLvpjN63dPL4OAQVjBbceCkjcLtUw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-interaction-external-slow": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-interaction-external-slow/-/tsparticles-interaction-external-slow-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-7mj2Yi8menOnr4FwkcZvjzffco71P+lmH+NkIuXyuLQmmYURloCpUQ03pONqSfdYF+DSnreanXtiM0N7dc9sfw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-interaction-external-trail": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-interaction-external-trail/-/tsparticles-interaction-external-trail-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-BxmxfKxx7giWpp8ZWgfcO9MBI/BAYkhwr2QY3BGdk59jpp90Zxe7jNRSU5kMyhxOmD088F0B9lBEsu3L2G+VaQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-interaction-particles-attract": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-interaction-particles-attract/-/tsparticles-interaction-particles-attract-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-ceWxtHxKLvB2IGtCzvunmjVaUeHXUT8tVtHDlxz72M87ZngcFsBoGy69ZjFS+U1EC5BZHQDYOC6Eknvazd2UuQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-interaction-particles-collisions": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-interaction-particles-collisions/-/tsparticles-interaction-particles-collisions-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-7Wyf/XpgsklYgoB0dh+OHgY7IYhlgLRtHYryFMTodd36N6kWMwKo+6Mg5OvmbEeLQqU+hTUXiD2fjjzLMebKXw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-interaction-particles-links": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-interaction-particles-links/-/tsparticles-interaction-particles-links-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-ZcsgvpNNi4ma6yy4XIubuBaLd9hI6J2SgIi7Pz3I2QfkSsGmJPDNdRoN1AuLLwbb5T80X2mVw0bomPFuW6zSMg==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-move-base": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-move-base/-/tsparticles-move-base-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-6/uO7N9HbVJokG8sjPF8YjJzkcnwELoZEkaiABX0mGxdICYCyjpjOdOfwF7UCf8Ctqh2/kxQjv4fk0Aj2Z3nag==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-move-parallax": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-move-parallax/-/tsparticles-move-parallax-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-uFqtEtCWabC7XZLZ7icIYYF9XB2XfedT8rjcLtyuBymQX8pfMJ5HUtd3ONI6Cik7I+BtqOfAkuZqTDcBTs7zlA==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-particles.js": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-particles.js/-/tsparticles-particles.js-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-UyAEoz3ZkjBXIwC4NRJWnD4KdntuZyIKlPDZOKWz8ZL9I8jEvlle9XdonDj5IsLAwySqIq7vom5OUeIrqXdxjQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "funding": {[m
+[32m+[m[32m        "type": "github",[m
+[32m+[m[32m        "url": "https://github.com/sponsors/matteobruni"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-plugin-absorbers": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-plugin-absorbers/-/tsparticles-plugin-absorbers-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-K4AmBqEWqcC8aXc+TEmv2GHIlZ+b1jAPtuYr30j1rZbaMK7kbvjvVmZbDNM2RJyuBqkuAoV/e3DAOuH5YpBs7g==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-plugin-easing-quad": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-plugin-easing-quad/-/tsparticles-plugin-easing-quad-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-rttpIJSwhPFys/sAYuZSsw9rWCvnUZdX1ePU12eTgqcyIelBdiySs4LndCLIXnkuS+jMMSYw9BzTSGfNz+sZcQ==",[m
+[32m+[m[32m      "funding": [[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "github",[m
+[32m+[m[32m          "url": "https://github.com/sponsors/matteobruni"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "buymeacoffee",[m
+[32m+[m[32m          "url": "https://www.buymeacoffee.com/matteobruni"[m
+[32m+[m[32m        }[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-plugin-emitters": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-plugin-emitters/-/tsparticles-plugin-emitters-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-G0rs7lL9xjbFGkWr+XDsDpyghTjiHq7oPAZyUe0c/3p0JETwQgZ63/egluYU1p3uWJj34KjgjHD3GZqjyfI95Q==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-shape-circle": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-shape-circle/-/tsparticles-shape-circle-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-d+PjFELhoCzPf2G+XKIew3Ho/Ql2fHzY0TrrIKVHzHufqWdQCWrhxNri2v0POLJFkcIYqvFThxM23I/cyKPgQw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-shape-image": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-shape-image/-/tsparticles-shape-image-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-yV3FAcqJ91EYG59OJ1SmShbogVs/uyk12u6LFTJnD2pmfdNwTeGpKMr3Cus5xJHQwJnFWufwkpOlBUxw55J/5g==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-shape-line": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-shape-line/-/tsparticles-shape-line-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-uREd1nJYTUzHrXh1FcdhCx5jA0hYtuJXyUiG3es9p3VyFM/f8ookGj8Ke/C48p90IOQMWuT9DyaEDnGs+hbcVQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-shape-polygon": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-shape-polygon/-/tsparticles-shape-polygon-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-qw580qr2VQveN1Q3kllhieW4GzB3t8fjlIRKZ0QG05npCG+ewBdXbD5G/9yfjGa1fTwCbHCfLoAFojjV15MBmg==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-shape-square": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-shape-square/-/tsparticles-shape-square-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-VjRNALTt34arsN2UAxaWa43gvdaQQbk7OluLB912u1UzLFbdCccE/sr7pjyLqYaf6F+ndnjnzVygNb/kRxX1uQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-shape-star": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-shape-star/-/tsparticles-shape-star-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-/nJdrHEq05dcVwLK+8i+QD3do+RNWrSvU1efVsOMzgLajH5s2mlSfyFcUSCQrmnmP7d6MpYZpbxa2KnpDSfW8g==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-shape-text": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-shape-text/-/tsparticles-shape-text-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-V9U8VE2am1JWabiHAhTzAg0uG8j92BnfwmgRfWjg/w4eMFF2uyyBHQDHIFzhZFDbDbqIxttXngkfivAqRdUzhw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-slim": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-slim/-/tsparticles-slim-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-lq8qePcf/lQ5HezR/gpIDn4UJUp8G+33MB7GkhpwmpQpJyoteT5nlXkLxgaedGZFkZAoTKINuU9NUW1Ci6MX4w==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-interaction-external-attract": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-interaction-external-bounce": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-interaction-external-bubble": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-interaction-external-connect": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-interaction-external-grab": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-interaction-external-pause": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-interaction-external-push": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-interaction-external-remove": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-interaction-external-repulse": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-interaction-external-slow": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-interaction-particles-attract": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-interaction-particles-collisions": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-interaction-particles-links": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-move-base": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-move-parallax": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-particles.js": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-plugin-easing-quad": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-shape-circle": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-shape-image": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-shape-line": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-shape-polygon": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-shape-square": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-shape-star": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-shape-text": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-updater-angle": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-updater-color": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-updater-life": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-updater-opacity": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-updater-out-modes": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-updater-size": "^2.9.3",[m
+[32m+[m[32m        "tsparticles-updater-stroke-color": "^2.9.3"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "funding": {[m
+[32m+[m[32m        "type": "github",[m
+[32m+[m[32m        "url": "https://github.com/sponsors/matteobruni"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-updater-angle": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-updater-angle/-/tsparticles-updater-angle-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-Z8VLOw2UUxrvV3YH44My5kmeBUcJUHTSCMRUIqFvgvxDs0Q/g2eVWkr1L+Crpw6PE5FJMdDGWRjWwxMwNdVfuQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-updater-color": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-updater-color/-/tsparticles-updater-color-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-eBJ7ZNsG3uCQlpfEf2FocsHLlMnd/vgWPZtOr2Iu7KA2OR3zy7u62D/oiRZkZEWtjhh5GlPrsy7njo6oToRBNQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-updater-destroy": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-updater-destroy/-/tsparticles-updater-destroy-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-SRgFISarsLpNz/gnMvkCFV2uITpwkUX5Fva34DVWHK6glY0053x2uvtUQluwHfp6DIJAueRMRhZ0dmzVltdOLw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-updater-life": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-updater-life/-/tsparticles-updater-life-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-VUeWBCLKoLd69+C9CFHjVG0SaqCbMgQqag6NIGMqTmaaZNFcn1H8rheIG9NU70UOTsYRMPfwmZK1SKnqAK6jQQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-updater-opacity": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-updater-opacity/-/tsparticles-updater-opacity-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-ON5t2qeegnm+MsmaF6ZvhUmKLzk/zXozsw9Dsgw8iJYX8WmQmp2VC72COTzADW495ovwGjBiR1KFelM/GVfHgg==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-updater-out-modes": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-updater-out-modes/-/tsparticles-updater-out-modes-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-LEcAIeK8b3ovLGuuTob1L3o57XodqRuvDjtUT2TiNIC6cf3QMAnqujwAyvBLJrYAuwr7rG1fXEEt9tovFYg+tw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-updater-roll": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-updater-roll/-/tsparticles-updater-roll-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-I/9vB1wA3RKwfeRPlw7nrxUW8uxcajwba+gxFEcIDx2C+OA2UVIuGzOQE59O2sppqLqwrcLOm3ayTt5se1qbpw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-updater-size": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-updater-size/-/tsparticles-updater-size-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-6qQ8T+7wt/B4BD5K1LWEXrfan+h2utSY1zNhE1cTcAQUDrrU06g/tfMkbrpMdduu6RWwGtoC4OsciCnBuiLEYQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-updater-stroke-color": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-updater-stroke-color/-/tsparticles-updater-stroke-color-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-zEjn8vLeoGsP0kPEg0L65wwhm7c5s7QD5cWeSz0mJVibwpV+C16K20kcSjkI57QUMAFQXwgGJ9M0grgCQsiawA==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-updater-tilt": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-updater-tilt/-/tsparticles-updater-tilt-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-x1EDyvBfqgBh1021lohf2shn+V6U9WhMasGD+fKugwRxNZ0nAe5DK0wop/26L2MUIb+AbIg2sXPdxuv1zE7G7w==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-updater-twinkle": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-updater-twinkle/-/tsparticles-updater-twinkle-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-IHxKAYBRpBiOBtU/8Wh1wv8wCQa2dC5K+LPjDw3JTyzPmPnskjGiHXiPyZTbHPdAqrSQ29jJCfJwn0HAIqEjwQ==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/tsparticles-updater-wobble": {[m
+[32m+[m[32m      "version": "2.9.3",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/tsparticles-updater-wobble/-/tsparticles-updater-wobble-2.9.3.tgz",[m
+[32m+[m[32m      "integrity": "sha512-/Doid0P/OjaO9cUzD/Z3j0GNA+8X3DUvVsOo/5mPt914PJBbcWYGpweE8u75ZPcHe9OM5u6CHFMf3PMurCEBCw==",[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "tsparticles-engine": "^2.9.3"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/typed.js": {[m
+[32m+[m[32m      "version": "2.0.16",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/typed.js/-/typed.js-2.0.16.tgz",[m
+[32m+[m[32m      "integrity": "sha512-IBB52GlJiTUOnomwdVVf7lWgC6gScn8md+26zTHj5oJWA+4pSuclHE76rbGI2hnyO+NT+QXdIUHbfjAY5nEtcw=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/update-browserslist-db": {[m
+[32m+[m[32m      "version": "1.0.11",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.0.11.tgz",[m
+[32m+[m[32m      "integrity": "sha512-dCwEFf0/oT85M1fHBg4F0jtLwJrutGoHSQXCh7u4o2t1drG+c0a9Flnqww6XUKSfQMPpJBRjU8d4RXB09qtvaA==",[m
+[32m+[m[32m      "funding": [[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "opencollective",[m
+[32m+[m[32m          "url": "https://opencollective.com/browserslist"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "tidelift",[m
+[32m+[m[32m          "url": "https://tidelift.com/funding/github/npm/browserslist"[m
+[32m+[m[32m        },[m
+[32m+[m[32m        {[m
+[32m+[m[32m          "type": "github",[m
+[32m+[m[32m          "url": "https://github.com/sponsors/ai"[m
+[32m+[m[32m        }[m
+[32m+[m[32m      ],[m
+[32m+[m[32m      "dependencies": {[m
+[32m+[m[32m        "escalade": "^3.1.1",[m
+[32m+[m[32m        "picocolors": "^1.0.0"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "bin": {[m
+[32m+[m[32m        "update-browserslist-db": "cli.js"[m
+[32m+[m[32m      },[m
+[32m+[m[32m      "peerDependencies": {[m
+[32m+[m[32m        "browserslist": ">= 4.21.0"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/util-deprecate": {[m
+[32m+[m[32m      "version": "1.0.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/wrappy": {[m
+[32m+[m[32m      "version": "1.0.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ=="[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/yaml": {[m
+[32m+[m[32m      "version": "2.2.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/yaml/-/yaml-2.2.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-CBKFWExMn46Foo4cldiChEzn7S7SRV+wqiluAb6xmueD/fGyRHIhX8m14vVGgeFWjN540nKCNVj6P21eQjgTuA==",[m
+[32m+[m[32m      "engines": {[m
+[32m+[m[32m        "node": ">= 14"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m    "node_modules/zod": {[m
+[32m+[m[32m      "version": "3.21.4",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/zod/-/zod-3.21.4.tgz",[m
+[32m+[m[32m      "integrity": "sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==",[m
+[32m+[m[32m      "funding": {[m
+[32m+[m[32m        "url": "https://github.com/sponsors/colinhacks"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    }[m
+[32m+[m[32m  }[m
+[32m+[m[32m}[m
+[1mdiff --git a/package.json b/package.json[m
+[1mnew file mode 100644[m
+[1mindex 0000000..28bd49f[m
+[1m--- /dev/null[m
+[1m+++ b/package.json[m
+[36m@@ -0,0 +1,24 @@[m
+[32m+[m[32m{[m
+[32m+[m[32m  "name": "portfolio",[m
+[32m+[m[32m  "version": "0.1.0",[m
+[32m+[m[32m  "private": true,[m
+[32m+[m[32m  "scripts": {[m
+[32m+[m[32m    "dev": "next dev",[m
+[32m+[m[32m    "build": "next build",[m
+[32m+[m[32m    "start": "next start",[m
+[32m+[m[32m    "lint": "next lint"[m
+[32m+[m[32m  },[m
+[32m+[m[32m  "dependencies": {[m
+[32m+[m[32m    "autoprefixer": "10.4.14",[m
+[32m+[m[32m    "next": "13.4.2",[m
+[32m+[m[32m    "postcss": "8.4.23",[m
+[32m+[m[32m    "react": "18.2.0",[m
+[32m+[m[32m    "react-dom": "18.2.0",[m
+[32m+[m[32m    "react-icons": "^4.8.0",[m
+[32m+[m[32m    "react-scroll": "^1.8.9",[m
+[32m+[m[32m    "react-tsparticles": "^2.9.3",[m
+[32m+[m[32m    "react-typed": "^1.2.0",[m
+[32m+[m[32m    "tailwindcss": "3.3.2",[m
+[32m+[m[32m    "tsparticles": "^2.9.3"[m
+[32m+[m[32m  }[m
+[32m+[m[32m}[m
+[1mdiff --git a/postcss.config.js b/postcss.config.js[m
+[1mnew file mode 100644[m
+[1mindex 0000000..33ad091[m
+[1m--- /dev/null[m
+[1m+++ b/postcss.config.js[m
+[36m@@ -0,0 +1,6 @@[m
+[32m+[m[32mmodule.exports = {[m
+[32m+[m[32m  plugins: {[m
+[32m+[m[32m    tailwindcss: {},[m
+[32m+[m[32m    autoprefixer: {},[m
+[32m+[m[32m  },[m
+[32m+[m[32m}[m
+[1mdiff --git a/public/SCLOGO.png b/public/SCLOGO.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..69aedab[m
+Binary files /dev/null and b/public/SCLOGO.png differ
+[1mdiff --git a/public/aws.png b/public/aws.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b41d8ac[m
+Binary files /dev/null and b/public/aws.png differ
+[1mdiff --git a/public/bg1.jpg b/public/bg1.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..fa5b9dd[m
+Binary files /dev/null and b/public/bg1.jpg differ
+[1mdiff --git a/public/bg2.jpg b/public/bg2.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0fca0df[m
+Binary files /dev/null and b/public/bg2.jpg differ
+[1mdiff --git a/public/css.png b/public/css.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ded3df0[m
+Binary files /dev/null and b/public/css.png differ
+[1mdiff --git a/public/favicon.ico b/public/favicon.ico[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e97ff2a[m
+Binary files /dev/null and b/public/favicon.ico differ
+[1mdiff --git a/public/firebase.png b/public/firebase.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..dd5e1a8[m
+Binary files /dev/null and b/public/firebase.png differ
+[1mdiff --git a/public/github.png b/public/github.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..f713d2f[m
+Binary files /dev/null and b/public/github.png differ
+[1mdiff --git a/public/html.png b/public/html.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7f7aef6[m
+Binary files /dev/null and b/public/html.png differ
+[1mdiff --git a/public/javascript.png b/public/javascript.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d2e56ab[m
+Binary files /dev/null and b/public/javascript.png differ
+[1mdiff --git a/public/logo1.png b/public/logo1.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..58ccee2[m
+Binary files /dev/null and b/public/logo1.png differ
+[1mdiff --git a/public/mongo.png b/public/mongo.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..93d962b[m
+Binary files /dev/null and b/public/mongo.png differ
+[1mdiff --git a/public/next.png b/public/next.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..111ae5f[m
+Binary files /dev/null and b/public/next.png differ
+[1mdiff --git a/public/next.svg b/public/next.svg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5174b28[m
+[1m--- /dev/null[m
+[1m+++ b/public/next.svg[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 394 80"><path fill="#000" d="M262 0h68.5v12.7h-27.2v66.6h-13.6V12.7H262V0ZM149 0v12.7H94v20.4h44.3v12.6H94v21h55v12.6H80.5V0h68.7zm34.3 0h-17.8l63.8 79.4h17.9l-32-39.7 32-39.6h-17.9l-23 28.6-23-28.6zm18.3 56.7-9-11-27.1 33.7h17.8l18.3-22.7z"/><path fill="#000" d="M81 79.3 17 0H0v79.3h13.6V17l50.2 62.3H81Zm252.6-.4c-1 0-1.8-.4-2.5-1s-1.1-1.6-1.1-2.6.3-1.8 1-2.5 1.6-1 2.6-1 1.8.3 2.5 1a3.4 3.4 0 0 1 .6 4.3 3.7 3.7 0 0 1-3 1.8zm23.2-33.5h6v23.3c0 2.1-.4 4-1.3 5.5a9.1 9.1 0 0 1-3.8 3.5c-1.6.8-3.5 1.3-5.7 1.3-2 0-3.7-.4-5.3-1s-2.8-1.8-3.7-3.2c-.9-1.3-1.4-3-1.4-5h6c.1.8.3 1.6.7 2.2s1 1.2 1.6 1.5c.7.4 1.5.5 2.4.5 1 0 1.8-.2 2.4-.6a4 4 0 0 0 1.6-1.8c.3-.8.5-1.8.5-3V45.5zm30.9 9.1a4.4 4.4 0 0 0-2-3.3 7.5 7.5 0 0 0-4.3-1.1c-1.3 0-2.4.2-3.3.5-.9.4-1.6 1-2 1.6a3.5 3.5 0 0 0-.3 4c.3.5.7.9 1.3 1.2l1.8 1 2 .5 3.2.8c1.3.3 2.5.7 3.7 1.2a13 13 0 0 1 3.2 1.8 8.1 8.1 0 0 1 3 6.5c0 2-.5 3.7-1.5 5.1a10 10 0 0 1-4.4 3.5c-1.8.8-4.1 1.2-6.8 1.2-2.6 0-4.9-.4-6.8-1.2-2-.8-3.4-2-4.5-3.5a10 10 0 0 1-1.7-5.6h6a5 5 0 0 0 3.5 4.6c1 .4 2.2.6 3.4.6 1.3 0 2.5-.2 3.5-.6 1-.4 1.8-1 2.4-1.7a4 4 0 0 0 .8-2.4c0-.9-.2-1.6-.7-2.2a11 11 0 0 0-2.1-1.4l-3.2-1-3.8-1c-2.8-.7-5-1.7-6.6-3.2a7.2 7.2 0 0 1-2.4-5.7 8 8 0 0 1 1.7-5 10 10 0 0 1 4.3-3.5c2-.8 4-1.2 6.4-1.2 2.3 0 4.4.4 6.2 1.2 1.8.8 3.2 2 4.3 3.4 1 1.4 1.5 3 1.5 5h-5.8z"/></svg>[m
+\ No newline at end of file[m
+[1mdiff --git a/public/node.png b/public/node.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..527e093[m
+Binary files /dev/null and b/public/node.png differ
+[1mdiff --git a/public/project1.png b/public/project1.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4a18332[m
+Binary files /dev/null and b/public/project1.png differ
+[1mdiff --git a/public/project2.webp b/public/project2.webp[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4c48125[m
+Binary files /dev/null and b/public/project2.webp differ
+[1mdiff --git a/public/project3.jpg b/public/project3.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7df4aae[m
+Binary files /dev/null and b/public/project3.jpg differ
+[1mdiff --git a/public/project_prolab.png b/public/project_prolab.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e3eff84[m
+Binary files /dev/null and b/public/project_prolab.png differ
+[1mdiff --git a/public/projects/realestate.jpg b/public/projects/realestate.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b053170[m
+Binary files /dev/null and b/public/projects/realestate.jpg differ
+[1mdiff --git a/public/projects/workImg.jpeg b/public/projects/workImg.jpeg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b7a3a76[m
+Binary files /dev/null and b/public/projects/workImg.jpeg differ
+[1mdiff --git a/public/react.png b/public/react.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..795fccc[m
+Binary files /dev/null and b/public/react.png differ
+[1mdiff --git a/public/sc.jpg b/public/sc.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1de4c50[m
+Binary files /dev/null and b/public/sc.jpg differ
+[1mdiff --git a/public/sc2.jpg b/public/sc2.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e244419[m
+Binary files /dev/null and b/public/sc2.jpg differ
+[1mdiff --git a/public/sclogosmall.png b/public/sclogosmall.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6cfa8f8[m
+Binary files /dev/null and b/public/sclogosmall.png differ
+[1mdiff --git a/public/tailwind.png b/public/tailwind.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1b4c4e8[m
+Binary files /dev/null and b/public/tailwind.png differ
+[1mdiff --git a/public/vercel.svg b/public/vercel.svg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d2f8422[m
+[1m--- /dev/null[m
+[1m+++ b/public/vercel.svg[m
+[36m@@ -0,0 +1 @@[m
+[32m+[m[32m<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 283 64"><path fill="black" d="M141 16c-11 0-19 7-19 18s9 18 20 18c7 0 13-3 16-7l-7-5c-2 3-6 4-9 4-5 0-9-3-10-7h28v-3c0-11-8-18-19-18zm-9 15c1-4 4-7 9-7s8 3 9 7h-18zm117-15c-11 0-19 7-19 18s9 18 20 18c6 0 12-3 16-7l-8-5c-2 3-5 4-8 4-5 0-9-3-11-7h28l1-3c0-11-8-18-19-18zm-10 15c2-4 5-7 10-7s8 3 9 7h-19zm-39 3c0 6 4 10 10 10 4 0 7-2 9-5l8 5c-3 5-9 8-17 8-11 0-19-7-19-18s8-18 19-18c8 0 14 3 17 8l-8 5c-2-3-5-5-9-5-6 0-10 4-10 10zm83-29v46h-9V5h9zM37 0l37 64H0L37 0zm92 5-27 48L74 5h10l18 30 17-30h10zm59 12v10l-3-1c-6 0-10 4-10 10v15h-9V17h9v9c0-5 6-9 13-9z"/></svg>[m
+\ No newline at end of file[m
+[1mdiff --git a/tailwind.config.js b/tailwind.config.js[m
+[1mnew file mode 100644[m
+[1mindex 0000000..74629d4[m
+[1m--- /dev/null[m
+[1m+++ b/tailwind.config.js[m
+[36m@@ -0,0 +1,33 @@[m
+[32m+[m[32m/** @type {import('tailwindcss').Config} */[m
+[32m+[m[32mmodule.exports = {[m
+[32m+[m[32m  content: [[m
+[32m+[m[32m    './pages/**/*.{js,ts,jsx,tsx,mdx}',[m
+[32m+[m[32m    './components/**/*.{js,ts,jsx,tsx,mdx}',[m
+[32m+[m[32m    './app/**/*.{js,ts,jsx,tsx,mdx}',[m
+[32m+[m[32m  ],[m
+[32m+[m[32m  theme: {[m
+[32m+[m[32m    extend: {[m
+[32m+[m[32m      backgroundImage: {[m
+[32m+[m[32m        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',[m
+[32m+[m[32m        'gradient-conic':[m
+[32m+[m[32m          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',[m
+[32m+[m[32m          'project1': "url('/project1.png')",[m
+[32m+[m[32m          'project2': "url('/project2.webp')",[m
+[32m+[m[32m          'project3': "url('/project3.jpg')",[m
+[32m+[m[32m          'projectprolab': "url('/project_prolab.png')",[m
+[32m+[m
+[32m+[m[32m      },[m
+[32m+[m[32m      colors: {[m
+[32m+[m[32m        'primary': '#45a29e',[m
+[32m+[m[32m        'primarylight':'#64ffda',[m
+[32m+[m[32m        'primarytext': '#1d3532',[m
+[32m+[m[32m        'light': '#C4FCF0',[m
+[32m+[m[32m        'dark': '#4C4637' ,[m
+[32m+[m[32m        'accent': '#A79017'[m
+[32m+[m
+[32m+[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+[32m+[m[32m  },[m
+[32m+[m[32m  plugins: [],[m
+[32m+[m[32m}[m
