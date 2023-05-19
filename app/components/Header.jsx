@@ -25,14 +25,14 @@ export default function Header() {
     
         <ul className="hidden md:flex">
        
-          <li className="hover:text-[#64ffda] cursor-pointer"> <Link to="about" smooth={true}  duration={1000} >
+          <li className="hover:text-[#64ffda] cursor-pointer text-xl"> <Link to="about" smooth={true}  duration={1000} >
           About
         </Link></li>
        
-          <li className="hover:text-[#64ffda] cursor-pointer"> <Link to="work" smooth={true} duration={1000} >
+          <li className="hover:text-[#64ffda] cursor-pointer text-xl"> <Link to="work" smooth={true} duration={1000} >
           Work
         </Link></li>
-          <li className="hover:text-[#64ffda] cursor-pointer"> <Link to="contact" smooth={true}  duration={1000} >
+          <li className="hover:text-[#64ffda] cursor-pointer text-xl"> <Link to="contact" smooth={true}  duration={1000} >
           Contact
         </Link></li>
         </ul>

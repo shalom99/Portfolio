@@ -18,24 +18,24 @@ const Contact = () => {
         </div>
         <div className="flex flex-col md:flex-row items-center gap-5">
       <div className="md:w-[50%] flex flex-col gap-5">
-       <h2 className="text-4xl font-semibold text-primary">Got a problem to solve?</h2>
+       <h2 className="text-3xl md:text-4xl font-semibold text-primary">Got a problem to solve?</h2>
         <p className='text-lg mb-5 text-white'>I'm available for freelance work.</p>
         <div className="flex flex-col gap-5">
-          <div className="flex items-center gap-7">
+          <div className="flex items-center gap-5">
             <BsFillTelephoneFill size={55} className="border-2 rounded-full p-4 text-primary" />
             <p className="text-slate-300">(+63)909 1644 811</p>
           </div>
-          <div className="flex items-center gap-7 group">
+          <div className="flex items-center gap-5 group">
           <AiOutlineMail size={55} className="border-2 group-hover:border-primary rounded-full duration-500 p-4 text-primary" />
             <a href="mailto:castroshalom77@gmail.com" className="text-slate-300 underline group-hover:text-primary duration-500">castroshalom77@gmail.com</a>
           </div>
-          <div className="flex items-center gap-7">
+          <div className="flex items-center gap-5">
             <FaMapMarkerAlt size={55} className="border-2 rounded-full p-4 text-primary" />
             <p className="text-slate-300"> Baguio City, Philippines 2600</p>
           </div>
         </div>
       </div>
-
+    
       <div
         name="contact"
         className="w-full md:w-[50%] flex justify-center"
