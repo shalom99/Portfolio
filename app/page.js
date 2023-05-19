@@ -108,7 +108,7 @@ const particlesLoaded = useCallback(async container => {
         />
     <Landing />
     <About />
-    <Skills />
+    {/* <Skills /> */}
     <Work />
     <Contact />
   </main>

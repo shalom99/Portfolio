@@ -25,16 +25,14 @@ export default function Header() {
     
         <ul className="hidden md:flex">
        
-          <li className="hover:text-[#64ffda]"> <Link to="about" smooth={true}  duration={1000} >
+          <li className="hover:text-[#64ffda] cursor-pointer"> <Link to="about" smooth={true}  duration={1000} >
           About
         </Link></li>
-          <li className="hover:text-[#64ffda]"> <Link to="skills" smooth={true}  duration={1000} >
-          Skills
-        </Link></li>
-          <li className="hover:text-[#64ffda]"> <Link to="work" smooth={true} duration={1000} >
+       
+          <li className="hover:text-[#64ffda] cursor-pointer"> <Link to="work" smooth={true} duration={1000} >
           Work
         </Link></li>
-          <li className="hover:text-[#64ffda]"> <Link to="contact" smooth={true}  duration={1000} >
+          <li className="hover:text-[#64ffda] cursor-pointer"> <Link to="contact" smooth={true}  duration={1000} >
           Contact
         </Link></li>
         </ul>
@@ -48,19 +46,15 @@ export default function Header() {
       {/* Mobile Menu */}
       <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#1f2731] flex flex-col justify-center items-center z-100'}>
 
-        <li className="py-6 text-4xl"> <Link onClick={handleClick} href="/" smooth={true}  duration={500} >
-          Home
-        </Link></li>
-        <li className="py-6 text-4xl"> <Link onClick={handleClick} href="/" smooth={true}  duration={500} >
+  
+        <li className="py-6 text-4xl"> <Link onClick={handleClick} to="about" smooth={true}  duration={500} >
           About
         </Link></li>
-        <li className="py-6 text-4xl"> <Link onClick={handleClick} href="/" smooth={true}  duration={500} >
-          Skills
-        </Link></li>
-        <li className="py-6 text-4xl"> <Link onClick={handleClick} href="/" smooth={true}  duration={500} >
+       
+        <li className="py-6 text-4xl"> <Link onClick={handleClick} to="work" smooth={true}  duration={500} >
           Work
         </Link></li>
-        <li className="py-6 text-4xl"> <Link onClick={handleClick} href="/" smooth={true}  duration={500} >
+        <li className="py-6 text-4xl"> <Link onClick={handleClick} to="contact" smooth={true}  duration={500} >
           Contact
         </Link></li>
       </ul>

@@ -1,28 +1,33 @@
 'use client'
 import React from "react";
-import { Bounce, Swing } from "react-awesome-reveal";
+import { Bounce, Slide, Swing } from "react-awesome-reveal";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col gap-5 md:flex-row md:w-[90%] lg:w-[60%]  md:items-center md:mx-auto py-10 px-2 md:px-0  ">
-      <div className="md:w-[40%]">
-        <Bounce triggerOnce>
-        <h1 className="text-3xl md:text-4xl font-bold  text-gray-300 mb-5">
-          Contact Me
-        </h1>
-        </Bounce>
-        <p className='text-md mb-5 text-primary'>I'm available for freelance work.</p>
+    <div className=" md:flex-row md:w-[90%] lg:w-[60%] xl:w-[50%] md:mx-auto py-10 px-2 md:px-0 ">
+      <div> 
+      <Slide triggerOnce>
+        <div className='flex items-center gap-5'>
+      <h1 className='text-4xl font-semibold py-5 text-white'>Contact Me</h1>
+      <div className='grow bg-primary h-[3px]'></div>
+      </div>
+      </Slide>
+        </div>
+        <div className="flex flex-col md:flex-row items-center gap-5">
+      <div className="md:w-[50%] flex flex-col gap-5">
+       <h2 className="text-4xl font-semibold text-primary">Got a problem to solve?</h2>
+        <p className='text-lg mb-5 text-white'>I'm available for freelance work.</p>
         <div className="flex flex-col gap-5">
           <div className="flex items-center gap-7">
             <BsFillTelephoneFill size={55} className="border-2 rounded-full p-4 text-primary" />
             <p className="text-slate-300">(+63)909 1644 811</p>
           </div>
-          <div className="flex items-center gap-7">
-          <AiOutlineMail size={55} className="border-2 rounded-full p-4 text-primary" />
-            <p className="text-slate-300">castroshalom77@gmail.com</p>
+          <div className="flex items-center gap-7 group">
+          <AiOutlineMail size={55} className="border-2 group-hover:border-primary rounded-full duration-500 p-4 text-primary" />
+            <a href="mailto:castroshalom77@gmail.com" className="text-slate-300 underline group-hover:text-primary duration-500">castroshalom77@gmail.com</a>
           </div>
           <div className="flex items-center gap-7">
             <FaMapMarkerAlt size={55} className="border-2 rounded-full p-4 text-primary" />
@@ -33,7 +38,7 @@ const Contact = () => {
 
       <div
         name="contact"
-        className="md:w-[60%] flex justify-center"
+        className="w-full md:w-[50%] flex justify-center"
       >
         <form
           method="POST"
@@ -65,6 +70,7 @@ const Contact = () => {
             Let's Collaborate!
           </button>
         </form>
+      </div>
       </div>
     </div>
   );

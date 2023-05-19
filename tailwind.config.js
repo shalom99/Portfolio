@@ -15,6 +15,7 @@ module.exports = {
           'project2': "url('/project2.webp')",
           'project3': "url('/project3.jpg')",
           'projectprolab': "url('/project_prolab.png')",
+          'profile': "url('/sc.jpg')",
 
       },
       colors: {
@@ -22,7 +23,7 @@ module.exports = {
         'primarylight':'#64ffda',
         'primarytext': '#1d3532',
         'light': '#C4FCF0',
-        'dark': '#4C4637' ,
+        'dark': '#1f2731' ,
         'accent': '#A79017'
 
 
