@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import Link from 'next/link'
+import {Link} from "react-scroll"
 import React, { useState } from 'react'
 import {FaBars, FaTimes, FaLinkedin, FaGithub} from 'react-icons/fa'
 import { HiOutlineMail} from 'react-icons/hi'
@@ -16,7 +16,7 @@ export default function Header() {
   
   return (
     
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4  text-gray-300">
+    <div className="w-full h-[80px] flex justify-between items-center px-4  text-gray-300">
       <div>
         <Image src="/sclogosmall.png"  width={50} height={50} alt="SC LOGO"/>
       </div>
@@ -25,16 +25,16 @@ export default function Header() {
     
         <ul className="hidden md:flex">
        
-          <li className="hover:text-[#64ffda]"> <Link href="/" smooth={true}  duration={500} >
+          <li className="hover:text-[#64ffda]"> <Link to="about" smooth={true}  duration={1000} >
           About
         </Link></li>
-          <li className="hover:text-[#64ffda]"> <Link href="/"smooth={true}  duration={500} >
+          <li className="hover:text-[#64ffda]"> <Link to="skills" smooth={true}  duration={1000} >
           Skills
         </Link></li>
-          <li className="hover:text-[#64ffda]"> <Link href="/" smooth={true}  duration={500} >
+          <li className="hover:text-[#64ffda]"> <Link to="work" smooth={true} duration={1000} >
           Work
         </Link></li>
-          <li className="hover:text-[#64ffda]"> <Link href="/"smooth={true}  duration={500} >
+          <li className="hover:text-[#64ffda]"> <Link to="contact" smooth={true}  duration={1000} >
           Contact
         </Link></li>
         </ul>

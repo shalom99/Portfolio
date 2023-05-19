@@ -4,15 +4,13 @@
 
 
 
-
-
-
 @layer base {
     body {
-     
+      scroll-behavior: smooth;
     }
     li {
         @apply px-4;
+        @apply cursor-pointer;
 
     }
 }

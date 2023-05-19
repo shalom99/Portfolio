@@ -1,15 +1,19 @@
+'use client'
 import React from "react";
+import { Bounce, Swing } from "react-awesome-reveal";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col gap-5 md:flex-row md:w-[90%] lg:w-[60%]  md:items-center md:mx-auto py-5 md:px-0  ">
+    <div className="flex flex-col gap-5 md:flex-row md:w-[90%] lg:w-[60%]  md:items-center md:mx-auto py-10 px-2 md:px-0  ">
       <div className="md:w-[40%]">
+        <Bounce triggerOnce>
         <h1 className="text-3xl md:text-4xl font-bold  text-gray-300 mb-5">
           Contact Me
         </h1>
+        </Bounce>
         <p className='text-md mb-5 text-primary'>I'm available for freelance work.</p>
         <div className="flex flex-col gap-5">
           <div className="flex items-center gap-7">
