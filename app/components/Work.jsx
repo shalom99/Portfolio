@@ -25,11 +25,11 @@ const Work = () => {
           <div className='row-span-full col-start-2 md:col-start-6 col-end-12 md:col-end-13 col-span-7 flex flex-col justify-center gap-2 py-2 z-10'>
             <h3 className='md:text-end text-md font-semibold text-primary'>Featured Project</h3>
             <h2 className='text-2xl md:text-4xl lg:text-5xl font-bold md:text-end text-white'>1. Pro-Lab</h2>
-            <p className='md:text-lg rounded-md text-primary md:text-end md:bg-dark py-2 px-1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem eum odit impedit autem quo quisquam quidem dolorum, temporibus enim similique nemo sapiente ratione nesciunt maiores vero. Sed natus nihil facere!</p>
+            <p className='md:text-lg rounded-md text-primary md:text-end md:bg-dark py-2 px-1'>Streamlined Medical Laboratory Services - Simplifying the process of accessing and managing laboratory testing, connecting healthcare providers with accredited labs for efficient and accurate diagnostics.</p>
             <ul className='flex md:justify-end gap-2 mb-5 text-white'>
                 <li className='border border-primary rounded-md p-2'>NextJS </li>
                 <li className='border border-primary rounded-md p-2'>Tailwind </li>
-                <li className='border border-primary rounded-md p-2'>JavaScript </li>
+                <li className='border border-primary rounded-md p-2'>Swiper </li>
             </ul>
             <div className='flex md:justify-end gap-2'>
                 <Link href="/"><BsGithub size={35} className='bg-primary text-dark rounded-md p-1 hover:bg-white hover:text-primary hover:scale-110 duration-500'/> </Link>
