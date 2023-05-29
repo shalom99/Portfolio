@@ -11,11 +11,11 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-          'project1': "url('/project1.png')",
+          'project1': "url('/project1.webp')",
           'project2': "url('/project2.webp')",
           'project3': "url('/project3.jpg')",
           'projectprolab': "url('/project_prolab.png')",
-          'profile': "url('/sc.jpg')",
+          'profile': "url('/sc.webp')",
 
       },
       colors: {

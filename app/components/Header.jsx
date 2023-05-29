@@ -18,7 +18,7 @@ export default function Header() {
     
     <div className="w-full h-[80px] flex justify-between items-center px-4  text-gray-300">
       <div>
-        <Image src="/sclogosmall.png"  width={50} height={50} alt="SC LOGO"/>
+        <Image src="/sclogosmall.webp"  width={50} height={50} alt="SC LOGO"/>
       </div>
 
       {/* menu */}

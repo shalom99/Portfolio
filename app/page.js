@@ -1,8 +1,8 @@
 'use client'
-import Image from 'next/image'
+
 import About from './components/About'
 import Landing from './components/Landing'
-import Skills from './components/Skills'
+
 import Work from './components/Work'
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";

@@ -2,8 +2,8 @@ import React from 'react';
 import { Slide, Fade, Flip } from "react-awesome-reveal";
 import { AiFillHtml5 } from 'react-icons/ai';
 import { FaCss3Alt, FaReact } from 'react-icons/fa';
-import {SiTailwindcss,SiNextdotjs} from 'react-icons/si';
-import {GrMysql} from 'react-icons/gr'
+import {SiTailwindcss,SiNextdotjs, SiMongodb} from 'react-icons/si';
+
 import {SiJavascript} from 'react-icons/si'
 import {FiFigma} from 'react-icons/fi'
 
@@ -54,8 +54,8 @@ const About = () => {
               <p>Tailwind</p>
             </div>
             <div className='flex flex-col items-center gap-2 group'>
-            <GrMysql size={50} className='group-hover:text-primary duration-500'/>
-              <p>MySQL</p>
+            <SiMongodb size={50} className='group-hover:text-primary duration-500'/>
+              <p>MongoDB</p>
             </div> 
             <div className='flex flex-col items-center gap-2 group'>
             <FiFigma size={50} className='group-hover:text-primary duration-500'/>
