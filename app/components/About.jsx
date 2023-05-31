@@ -23,7 +23,7 @@ const About = () => {
       <div className='flex flex-col md:flex-row items-center justify-between gap-5 py-10'>
       {/* left */}
       <div className='md:w-[50%]'>
-        <p className='text-lg'> Hello! My name is Shalom and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</p>
+        <p className='text-lg'> Welcome to my portfolio! I'm Shalom Castro, a skilled and passionate web developer. With expertise in front-end and back-end technologies, I create elegant, user-friendly websites.</p>
 
         <div className='flex flex-col gap-5 mt-5' >
           <p className='text-primary text-lg font-semibold'>Technologies I am currently using:</p>

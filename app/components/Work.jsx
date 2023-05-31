@@ -33,7 +33,7 @@ const Work = () => {
             </ul>
             <div className='flex md:justify-end gap-2'>
                 <Link href="/"><BsGithub size={35} className='bg-primary text-dark rounded-md p-1 hover:bg-white hover:text-primary hover:scale-110 duration-500'/> </Link>
-                <Link href="/"> <ImArrowUpRight size={35} className='bg-primary text-dark p-2 rounded-md hover:bg-white hover:text-primary hover:scale-110 duration-500'/> </Link>
+                <Link href="https://prolab-six.vercel.app/" target='_blank'> <ImArrowUpRight size={35} className='bg-primary text-dark p-2 rounded-md hover:bg-white hover:text-primary hover:scale-110 duration-500'/> </Link>
             </div>
           </div>
 
@@ -66,7 +66,7 @@ const Work = () => {
           </div>
         </div>
         </Slide>
-
+{/* 
       <Slide triggerOnce duration={1500}>
   
         <div className='grid grid-cols-12 shadow-lg '>
@@ -89,7 +89,7 @@ const Work = () => {
            
           </div>
         </div>
-        </Slide>
+        </Slide> */}
 
 
 
