@@ -13,7 +13,7 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
           'project1': "url('/project1.webp')",
           'project2': "url('/project2.webp')",
-          'project3': "url('/project3.jpg')",
+          'project3': "url('/project3.webp')",
           'projectprolab': "url('/project_prolab.png')",
           'profile': "url('/sc.webp')",
 

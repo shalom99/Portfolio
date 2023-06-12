@@ -33,7 +33,7 @@ const Work = () => {
             </ul>
             <div className='flex md:justify-end gap-2'>
                 <Link href="/"><BsGithub size={35} className='bg-primary text-dark rounded-md p-1 hover:bg-white hover:text-primary hover:scale-110 duration-500'/> </Link>
-                <Link href="https://prolab-six.vercel.app/" target='_blank'> <ImArrowUpRight size={35} className='bg-primary text-dark p-2 rounded-md hover:bg-white hover:text-primary hover:scale-110 duration-500'/> </Link>
+                <Link href="https://prolabmed.vercel.app/" target='_blank'> <ImArrowUpRight size={35} className='bg-primary text-dark p-2 rounded-md hover:bg-white hover:text-primary hover:scale-110 duration-500'/> </Link>
             </div>
           </div>
 
@@ -44,7 +44,7 @@ const Work = () => {
         </Slide>
 
 
-      <Slide direction='right' triggerOnce duration={1500}>
+      <Slide triggerOnce duration={1500}>
         <div className='grid grid-cols-12 shadow-lg'>
           <div className='row-span-full col-start-2 md:col-start-1 col-end-13 md:col-end-8 col-span-7 flex flex-col justify-center gap-2 py-2 z-10'>
             <h3 className='text-sm font-semibold text-primary'>Featured Project</h3>
@@ -66,31 +66,29 @@ const Work = () => {
           </div>
         </div>
         </Slide>
-{/* 
-      <Slide triggerOnce duration={1500}>
-  
-        <div className='grid grid-cols-12 shadow-lg '>
+
+        <Slide duration={1500} triggerOnce>
+      <div className='grid grid-cols-12 shadow-lg'>
           <div className='row-span-full col-start-2 md:col-start-6 col-end-12 md:col-end-13 col-span-7 flex flex-col justify-center gap-2 py-2 z-10'>
-            <h3 className='md:text-end text-sm font-semibold text-primary'>Featured Project</h3>
-            <h2 className='text-2xl md:text-4xl text-white font-bold md:text-end'>3. Mock Project</h2>
-            <p className='md:text-lg rounded-md text-primary md:text-end md:bg-dark py-2 px-1'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem eum odit impedit autem quo quisquam quidem dolorum, temporibus enim similique nemo sapiente ratione nesciunt maiores vero. Sed natus nihil facere!</p>
-            <ul className='flex md:justify-end  text-white gap-2 mb-5'>
+            <h3 className='md:text-end text-md font-semibold text-primary'>Featured Project</h3>
+            <h2 className='text-2xl md:text-4xl lg:text-5xl font-bold md:text-end text-white'>3. Delesign - PSD TO HTML</h2>
+            <p className='md:text-lg rounded-md text-primary md:text-end md:bg-dark py-2 px-1'>Converted the PSD design into semantic, clean, and valid HTML markup using TailwindCSS. Fully Responsive for desktop screens</p>
+            <ul className='flex md:justify-end gap-2 mb-5 text-white'>
                 <li className='border border-primary rounded-md p-2'>NextJS </li>
                 <li className='border border-primary rounded-md p-2'>Tailwind </li>
-                <li className='border border-primary rounded-md p-2'>JavaScript </li>
+                <li className='border border-primary rounded-md p-2'>Swiper </li>
             </ul>
             <div className='flex md:justify-end gap-2'>
                 <Link href="/"><BsGithub size={35} className='bg-primary text-dark rounded-md p-1 hover:bg-white hover:text-primary hover:scale-110 duration-500'/> </Link>
-                <Link href="/"> <ImArrowUpRight size={35} className='bg-primary text-dark p-2 rounded-md hover:bg-white hover:text-primary hover:scale-110 duration-500'/> </Link>
+                <Link href="https://delesign-shalom99.vercel.app/" target='_blank'> <ImArrowUpRight size={35} className='bg-primary text-dark p-2 rounded-md hover:bg-white hover:text-primary hover:scale-110 duration-500'/> </Link>
             </div>
           </div>
 
-          <div className='row-span-full col-span-7 col-start-1 col-end-13 md:col-end-8 bg-project3 bg-cover md:bg-contain bg-center md:bg-left bg-no-repeat  opacity-10 md:opacity-100 md:min-h-[525px]'>
+          <div className='row-span-full col-span-7 col-start-1 col-end-13 md:col-end-8 bg-project3 bg-cover md:bg-contain bg-center md:bg-left bg-no-repeat opacity-10 md:opacity-100 md:min-h-[525px]'>
            
           </div>
         </div>
-        </Slide> */}
-
+        </Slide>
 
 
 

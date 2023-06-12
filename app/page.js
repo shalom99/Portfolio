@@ -10,6 +10,7 @@ import { useCallback } from 'react'
 import Contact from './components/Contact'
 
 
+
 export default function Home() {
   const particlesInit = useCallback(async engine => {
     console.log(engine);
@@ -108,8 +109,8 @@ const particlesLoaded = useCallback(async container => {
         />
     <Landing />
     <About />
-    {/* <Skills /> */}
     <Work />
+
     <Contact />
   </main>
   )
